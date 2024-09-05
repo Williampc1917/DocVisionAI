@@ -46,6 +46,19 @@ Medical LLM Integration
 
 
 
+## Pneumonia Detection Model Training
+
+The pneumonia detection model for DocVisionAI was trained using a Kaggle dataset containing chest X-ray images that were classified as either normal or pneumonia. The dataset was pre-organized into training, validation, and test sets, with images reviewed by medical professionals for accuracy.
+
+To train the model:
+
+- The dataset was split into an 80/20 ratio for training and testing.
+- A **TensorFlow** model was developed using the **InceptionV3** architecture for transfer learning. This allowed for efficient feature extraction from the images.
+- **Data Augmentation** techniques, such as rotation, zoom, and horizontal flipping, were applied to the training images to enhance model robustness.
+- The model was trained to classify X-ray images as either normal or pneumonia, with a binary classification output.
+- **Early stopping** and **model checkpointing** were used during training to avoid overfitting and to save the best-performing model.
+
+The final model was saved and integrated into the platform's backend, where it processes incoming X-ray images and returns a pneumonia prediction along with a heatmap generated using Grad-CAM to highlight the areas that contributed most to the model's decision.
 ## Deployment Overview
 
 DocVisionAI is deployed using a combination of **Google Cloud** and **Firebase** services to ensure scalability, security, and seamless integration of machine learning models and user interfaces. Below is the detailed deployment setup for the backend and frontend components.
@@ -75,19 +88,6 @@ The backend, developed with **Java Spring Boot**, and various machine learning A
 
 
 
-## Pneumonia Detection Model Training
-
-The pneumonia detection model for DocVisionAI was trained using a Kaggle dataset containing chest X-ray images that were classified as either normal or pneumonia. The dataset was pre-organized into training, validation, and test sets, with images reviewed by medical professionals for accuracy.
-
-To train the model:
-
-- The dataset was split into an 80/20 ratio for training and testing.
-- A **TensorFlow** model was developed using the **InceptionV3** architecture for transfer learning. This allowed for efficient feature extraction from the images.
-- **Data Augmentation** techniques, such as rotation, zoom, and horizontal flipping, were applied to the training images to enhance model robustness.
-- The model was trained to classify X-ray images as either normal or pneumonia, with a binary classification output.
-- **Early stopping** and **model checkpointing** were used during training to avoid overfitting and to save the best-performing model.
-
-The final model was saved and integrated into the platform's backend, where it processes incoming X-ray images and returns a pneumonia prediction along with a heatmap generated using Grad-CAM to highlight the areas that contributed most to the model's decision.
 ## API Documentation
 
 You can view the full API documentation [here](https://documenter.getpostman.com/view/38128309/2sAXjQ1V7y).
