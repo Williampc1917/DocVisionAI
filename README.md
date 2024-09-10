@@ -12,8 +12,8 @@ The platform utilizes Firestore and Firebase Storage for secure data management 
 You can access the demo of DocVisionAI here: [Demo Link](https:)
 
 Use the following credentials to log in and explore the features:
-- **Username**: demo_user@example.com
-- **Password**: DemoPassword123
+- **Username**: 
+- **Password**: 
 
 This demo account is pre-configured with sample patient data and reports, allowing you to fully experience the AI analysis, report generation, and image heatmaps.
 ## Architecture Overview
