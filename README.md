@@ -7,15 +7,36 @@ In addition to these capabilities, DocVisionAI integrates a specialized medical 
 The platform utilizes Firestore and Firebase Storage for secure data management and Firebase Auth with Google Auth for seamless user authentication. DocVisionAI combines advanced AI technologies with robust cloud infrastructure to enhance diagnostic accuracy and efficiency.
 
 
-## Demo
+## Access DocVisionAI
 
-You can access the demo of DocVisionAI here: [Demo Link](https:)
+You can access the live site here: [www.docvisionai.com](https://www.docvisionai.com)
+
+## DocVisionAI Demo Account
 
 Use the following credentials to log in and explore the features:
 - **Email**: demo_user@docvisionai.com
 - **Password**: Demo1234!
 
-This demo account is pre-configured with sample patient data and reports, allowing you to fully experience the AI analysis, report generation, and image heatmaps.
+This demo account is pre-configured with sample patient data and reports, allowing you to fully experience the AI analysis, report generation, and image heatmaps. With this demo, you can:
+
+### **View and Analyze Patient Data**
+- Explore two pre-configured patient cases, **James Smith** (**Patient ID: PAT12345**) and **Michael Lee** (**Patient ID: SJ45678**), both of which include historical reports and chest X-ray analysis.
+- **View Past Reports**: Access completed reports for both patients to see detailed medical analysis, including AI-generated findings and heatmaps. This feature enables you to examine how the platform utilizes the medical LLM and machine learning models to generate radiology reports.
+  
+### **Medical Large Language Model (LLM)**
+- Interact with the AI-powered medical LLM to ask detailed questions about each patient's history and past reports. This tool can summarize medical records, analyze historical data, and assist in report writing, providing a powerful assistant for radiologists.
+
+### **Make Full Analysis Reports**
+- Start a new analysis for either **James Smith** or **Michael Lee**. Upload a new X-ray image or use pre-uploaded ones to perform a fresh analysis, and generate new reports using the platform’s AI capabilities. You can explore the workflow for chest X-ray studies, view AI predictions (such as pneumonia detection), and generate full medical reports with findings, impressions, and recommendations.
+- You can use the provided images in the **xray-images** folder in this repository to upload for analysis.
+
+### **Image Heatmaps and AI Predictions**
+- Each report includes AI-driven analysis of the X-ray images, including pneumonia detection and confidence scores. View the heatmap associated with the AI's decision to see what parts of the lung contributed most to the prediction.
+
+### **Task Management**
+- Use the **To-Do List** to simulate task management for pending reports and follow-ups. You can add, modify, or mark tasks as complete, keeping track of important actions related to patient care and analysis.
+
+
 ## Architecture Overview
 
 Frontend (Bootstrap Studio)
