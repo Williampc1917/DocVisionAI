@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Table - DocVisionAI</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/Features-Cards-icons.css">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <nav class="navbar align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0 navbar-dark" style="background: rgb(78, 115, 223);">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -64 640 640" width="1em" height="1em" fill="currentColor" style="font-size: 42px;">
+                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                        <path d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM288 160c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v48h48c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H352v48c0 8.8-7.2 16-16 16H304c-8.8 0-16-7.2-16-16V272H240c-8.8 0-16-7.2-16-16V224c0-8.8 7.2-16 16-16h48V160z"></path>
+                    </svg>
+                    <div class="sidebar-brand-icon rotate-n-15"></div>
+                    <div class="sidebar-brand-text mx-3"><span>DocVisionAI</span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item"><a class="nav-link" href="index-dash.html"><i class="fas fa-tachometer-alt" style="font-size: 13px;"></i><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.html"><i class="fas fa-user" style="font-size: 14px;"></i><span>Profile</span></a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link" href="Patient-Search-only.html"><i class="fas fa-search" style="font-size: 14px;"></i><span>Patient Search</span></a><a class="nav-link" href="Start-quick-analysis-1.html"><i class="fas fa-tachometer-alt" style="font-size: 13px;"></i><span>Quick Analysis</span></a><a class="nav-link" href="Start-analysis.html"><i class="fas fa-file-medical" style="font-size: 16px;"></i><span>Start Analysis</span></a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-expand bg-white shadow mb-4 topbar">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                        <ul class="navbar-nav"></ul>
+                        <h3 class="text-dark mb-0" style="font-weight: bold;font-size: 25px;">Quick Analysis</h3>
+                        <ul class="navbar-nav flex-nowrap ms-auto">
+                            <li class="nav-item dropdown no-arrow mx-1">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"></a>
+                                    <div class="dropdown-menu dropdown-list dropdown-menu-end animated--grow-in">
+                                        <h6 class="dropdown-header">alerts center</h6><a class="d-flex align-items-center dropdown-item" href="#">
+                                            <div class="me-3">
+                                                <div class="bg-primary icon-circle"><i class="fas fa-file-alt text-white"></i></div>
+                                            </div>
+                                            <div><span class="small text-gray-500">December 12, 2019</span>
+                                                <p>A new monthly report is ready to download!</p>
+                                            </div>
+                                        </a><a class="d-flex align-items-center dropdown-item" href="#">
+                                            <div class="me-3">
+                                                <div class="bg-success icon-circle"><i class="fas fa-donate text-white"></i></div>
+                                            </div>
+                                            <div><span class="small text-gray-500">December 7, 2019</span>
+                                                <p>$290.29 has been deposited into your account!</p>
+                                            </div>
+                                        </a><a class="d-flex align-items-center dropdown-item" href="#">
+                                            <div class="me-3">
+                                                <div class="bg-warning icon-circle"><i class="fas fa-exclamation-triangle text-white"></i></div>
+                                            </div>
+                                            <div><span class="small text-gray-500">December 2, 2019</span>
+                                                <p>Spending Alert: We've noticed unusually high spending for your account.</p>
+                                            </div>
+                                        </a><a class="text-center dropdown-item small text-gray-500" href="#">Show All Alerts</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown no-arrow mx-1">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"></a>
+                                    <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
+                                        <h6 class="dropdown-header">alerts center</h6><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar4.jpeg">
+                                                <div class="bg-success status-indicator"></div>
+                                            </div>
+                                            <div class="fw-bold">
+                                                <div class="text-truncate"><span>Hi there! I am wondering if you can help me with a problem I've been having.</span></div>
+                                                <p class="small text-gray-500 mb-0">Emily Fowler - 58m</p>
+                                            </div>
+                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar2.jpeg">
+                                                <div class="status-indicator"></div>
+                                            </div>
+                                            <div class="fw-bold">
+                                                <div class="text-truncate"><span>I have the photos that you ordered last month!</span></div>
+                                                <p class="small text-gray-500 mb-0">Jae Chun - 1d</p>
+                                            </div>
+                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar3.jpeg">
+                                                <div class="bg-warning status-indicator"></div>
+                                            </div>
+                                            <div class="fw-bold">
+                                                <div class="text-truncate"><span>Last month's report looks great, I am very happy with the progress so far, keep up the good work!</span></div>
+                                                <p class="small text-gray-500 mb-0">Morgan Alvarez - 2d</p>
+                                            </div>
+                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar5.jpeg">
+                                                <div class="bg-success status-indicator"></div>
+                                            </div>
+                                            <div class="fw-bold">
+                                                <div class="text-truncate"><span>Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</span></div>
+                                                <p class="small text-gray-500 mb-0">Chicken the Dog · 2w</p>
+                                            </div>
+                                        </a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                                    </div>
+                                </div>
+                                <div class="shadow dropdown-list dropdown-menu dropdown-menu-end" aria-labelledby="alertsDropdown"></div>
+                            </li>
+                            <div class="d-none d-sm-block topbar-divider"></div>
+                            <li class="nav-item dropdown no-arrow">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small" id="user-name"></span></a>
+                                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"><a class="dropdown-item" href="#"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile</a>
+                                        <div class="dropdown-divider"></div><a class="dropdown-item" id="logoutButton"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul><button class="btn rounded-circle border-0" id="sidebarToggle-1" type="button"></button>
+                    </div>
+                </nav>
+                <div class="container-fluid">
+                    <div class="card shadow"></div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="container"><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Analysis</title>
+    <!-- Load firebase-init.mjs first -->
+    <script type="module" src="./firebase-init.mjs"></script>
+    <!-- Then load your main script -->
+    <script type="module" src="./index.mjs"></script>
+</head>
+<body>
+    <div id="user-name"></div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="container-box">
+                    <div class="text-center">
+                        <form id="upload-form" class="mb-4">
+                            <div class="form-group">
+                                <div class="custom-file-upload">
+                                    <input type="file" class="form-control-file" id="image-upload" accept="image/*" multiple onchange="previewImages(event)">
+                                    <span id="file-name">Choose files...</span>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary" onclick="processImages()">Process</button>
+                        </form>
+                        <button type="button" class="btn btn-primary mb-4" onclick="viewAllImages()">View All Images</button>
+                        <div id="loading" style="display: none;">
+                            <div class="spinner-border text-primary" role="status"></div>
+                        </div>
+                        <div class="mt-4">
+                            <h5>Uploaded Images</h5>
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="sticky-column">Preview</th>
+                                            <th scope="col">File Name</th>
+                                            <th scope="col">Type</th>
+                                            <th scope="col">Size</th>
+                                            <th scope="col">Status</th>
+                                            <th scope="col">Confidence</th>
+                                            <th scope="col">Prediction</th>
+                                            <th scope="col">Heatmap</th>
+                                            <th scope="col">Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="image-table-body">
+                                        <!-- Rows will be dynamically added here -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Modal for enlarged image -->
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="expandedImage">
+  <div id="caption"></div>
+</div>
+
+
+<style>
+  body {
+  background-color: #f8f9fc;
+}
+
+.container-box {
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58,59,69,0.15);
+  border-radius: 0.35rem;
+  padding: 20px;
+  margin: 20px auto;
+  width: 100%;
+  overflow-x: auto;
+  /* Remove flex properties */
+}
+
+.form-group {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.custom-file-upload {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  background-color: #4e73df;
+  border-color: #4e73df;
+  padding: 10px 20px;
+  border-radius: 0.35rem;
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.custom-file-upload input[type="file"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+#file-name {
+  margin-left: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #4e73df;
+  border-color: #4e73df;
+  border-radius: 0.35rem;
+}
+
+.btn-primary:hover {
+  background-color: #2e59d9;
+  border-color: #2653d4;
+}
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table {
+  width: 100%;
+  table-layout: auto;
+}
+
+th, td {
+  white-space: nowrap;
+}
+
+.sticky-column {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .container-box {
+    padding: 10px;
+  }
+  .table thead {
+    display: none;
+  }
+  .table, .table tbody, .table tr, .table td {
+    display: block;
+    width: 100%;
+  }
+  .table tr {
+    margin-bottom: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 0.35rem;
+    padding: 10px;
+  }
+  .table td {
+    text-align: left;
+    padding-left: 0;
+    position: relative;
+    padding: 0.75rem;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+}
+
+.card {
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58,59,69,0.15);
+  border-radius: 0.35rem;
+}
+
+.card-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e3e6f0;
+  color: #4e73df !important;
+  font-weight: 700;
+}
+
+.form-control {
+  background-color: #f8f9fc;
+  border: 1px solid #d1d3e2;
+  color: rgb(133, 135, 150) !important;
+  border-radius: 0.35rem;
+}
+
+.form-control:focus {
+  border-color: #4e73df;
+  box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+}
+
+.btn-primary {
+  background-color: #4e73df;
+  border-color: #4e73df;
+  border-radius: 0.35rem;
+}
+
+.btn-primary:hover {
+  background-color: #2e59d9;
+  border-color: #2653d4;
+}
+
+label {
+  color: rgb(133,135,150);
+  font-weight: 600;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.form-group textarea,
+.form-group input[type="text"],
+.form-group input[type="date"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  transition: all 0.3s;
+}
+
+.form-group textarea:focus,
+.form-group input[type="text"]:focus,
+.form-group input[type="date"]:focus {
+  border-color: #4e73df;
+  box-shadow: 0 0 10px rgba(78, 115, 223, 0.1);
+}
+
+.card-body h5 {
+  color: #4e73df;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+</style>
+
+<script type="module">
+import { auth } from './firebase-init.mjs';  // Adjust the path if necessary
+
+let imageList = []; // Global list to keep track of images and their statuses
+
+// Attach functions to the window object to make them accessible globally
+window.previewImages = previewImages;
+
+function previewImages(event) {
+    const files = event.target.files;
+
+    // Append new files to the global image list
+    for (const file of files) {
+        // Check if the file already exists in the list
+        const existingFileIndex = imageList.findIndex(img => img.file.name === file.name);
+        if (existingFileIndex === -1) {
+            imageList.push({
+                file: file,
+                status: 'Pending',
+                confidence: 'N/A',
+                diagnosis: 'N/A',
+                heatmap: 'N/A'
+            });
+        }
+    }
+
+    // Render the image list
+    renderImageList();
+}
+
+let fileCounter = 1;
+
+function renderImageList() {
+    const tableBody = document.getElementById('image-table-body');
+    tableBody.innerHTML = '';
+
+    for (const imgData of imageList) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            if (!imgData.customFileName) {
+                const date = new Date();
+                const dateString = date.toISOString().slice(0, 10).replace(/-/g, '');
+                const timeString = date.toTimeString().slice(0, 8).replace(/:/g, '');
+                const fileExtension = imgData.file.name.split('.').pop();
+                imgData.customFileName = `image_${String(fileCounter).padStart(2, '0')}_${dateString}_${timeString}.${fileExtension}`;
+                fileCounter++;
+            }
+
+            const newRow = document.createElement('tr');
+            newRow.innerHTML = `
+                <td><img src="${e.target.result}" alt="Preview" width="100" onclick="showModal('${e.target.result}')"></td>
+    <td>${imgData.customFileName}</td>
+    <td>${imgData.file.type}</td>
+    <td>${(imgData.file.size / 1024).toFixed(2)} KB</td>
+    <td>${imgData.status}</td>
+    <td>${imgData.confidence}</td>
+    <td>${imgData.diagnosis}</td>
+    <td>${imgData.heatmap}</td>
+    <td>
+        <button class="btn btn-sm btn-danger" onclick="removeRow('${imgData.file.name}')">Remove</button>
+    </td>
+            `;
+            tableBody.appendChild(newRow);
+        };
+        reader.readAsDataURL(imgData.file);
+    }
+}
+
+window.processImages = processImages;
+
+function processImages() {
+    const pendingImages = imageList.filter(img => img.status === 'Pending');
+    if (pendingImages.length === 0) {
+        alert('No new images to process.');
+        return;
+    }
+
+    const formData = new FormData();
+    for (const imgData of pendingImages) {
+        formData.append('images', imgData.file);
+    }
+
+    const loading = document.getElementById('loading');
+    loading.style.display = 'block';
+
+    fetch('https://spring-boot-backend-dot-reference-node-426102-r4.uk.r.appspot.com/api/pneumonia-detection/upload', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(results => {
+        loading.style.display = 'none';
+
+        results.forEach((result, index) => {
+            pendingImages[index].status = 'Processed';
+            pendingImages[index].confidence = result.confidence ? `${(result.confidence * 100).toFixed(2)}%` : 'N/A';
+            pendingImages[index].diagnosis = result.diagnosis || 'N/A';
+            pendingImages[index].heatmap = result.heatmap ? `<img src="data:image/jpeg;base64,${result.heatmap}" width="100" alt="Heatmap" onclick="showModal('data:image/jpeg;base64,${result.heatmap}')">` : 'N/A';
+        });
+
+        renderImageList();
+    })
+    .catch(error => {
+        loading.style.display = 'none';
+        alert('An error occurred while processing the images.');
+        console.error('Error:', error);
+    });
+}
+window.removeRow = removeRow
+function removeRow(fileName) {
+    imageList = imageList.filter(img => img.file.name !== fileName);
+    renderImageList();
+}
+window.showModal = showModal
+
+function showModal(imageSrc) {
+    const modal = document.getElementById('imageModal');
+    const expandedImage = document.getElementById('expandedImage');
+    expandedImage.src = imageSrc;
+    modal.style.display = 'block';
+}
+window.closeModal = closeModal
+function closeModal() {
+    const modal = document.getElementById('imageModal');
+    modal.style.display = 'none';
+}
+</script>
+
+<body>
+</html>
+
+
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/firebase-init.mjs" type="module"></script>
+    <script src="assets/js/logout.mjs" type="module"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>

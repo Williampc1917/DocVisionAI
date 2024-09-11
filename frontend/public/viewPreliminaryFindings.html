@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Table - DocVisionAI</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/Features-Cards-icons.css">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <nav class="navbar align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0 navbar-dark" style="background: rgb(78, 115, 223);">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -64 640 640" width="1em" height="1em" fill="currentColor" style="font-size: 42px;">
+                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                        <path d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM288 160c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v48h48c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H352v48c0 8.8-7.2 16-16 16H304c-8.8 0-16-7.2-16-16V272H240c-8.8 0-16-7.2-16-16V224c0-8.8 7.2-16 16-16h48V160z"></path>
+                    </svg>
+                    <div class="sidebar-brand-icon rotate-n-15"></div>
+                    <div class="sidebar-brand-text mx-3"><span>DocVisionAI</span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item"><a class="nav-link" href="index-dash.html"><i class="fas fa-tachometer-alt" style="font-size: 13px;"></i><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.html"><i class="fas fa-user" style="font-size: 14px;"></i><span>Profile</span></a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link" href="Patient-Search-only.html"><i class="fas fa-search" style="font-size: 14px;"></i><span>Patient Search</span></a><a class="nav-link" href="Start-quick-analysis-1.html"><i class="fas fa-tachometer-alt" style="font-size: 13px;"></i><span>Quick Analysis</span></a><a class="nav-link" href="Start-analysis.html"><i class="fas fa-file-medical" style="font-size: 16px;"></i><span>Start Analysis</span></a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <nav class="navbar navbar-expand bg-white shadow mb-4 topbar">
+                <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                    <ul class="navbar-nav"></ul>
+                    <h3 class="text-dark mb-0" style="font-weight: bold;">Preliminary Findings</h3>
+                    <ul class="navbar-nav flex-nowrap ms-auto">
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="badge bg-danger badge-counter">3+</span><i class="fas fa-bell fa-fw"></i></a>
+                                <div class="dropdown-menu dropdown-list dropdown-menu-end animated--grow-in">
+                                    <h6 class="dropdown-header">alerts center</h6><a class="d-flex align-items-center dropdown-item" href="#">
+                                        <div class="me-3">
+                                            <div class="bg-primary icon-circle"><i class="fas fa-file-alt text-white"></i></div>
+                                        </div>
+                                        <div><span class="small text-gray-500">December 12, 2019</span>
+                                            <p>A new monthly report is ready to download!</p>
+                                        </div>
+                                    </a><a class="d-flex align-items-center dropdown-item" href="#">
+                                        <div class="me-3">
+                                            <div class="bg-success icon-circle"><i class="fas fa-donate text-white"></i></div>
+                                        </div>
+                                        <div><span class="small text-gray-500">December 7, 2019</span>
+                                            <p>$290.29 has been deposited into your account!</p>
+                                        </div>
+                                    </a><a class="d-flex align-items-center dropdown-item" href="#">
+                                        <div class="me-3">
+                                            <div class="bg-warning icon-circle"><i class="fas fa-exclamation-triangle text-white"></i></div>
+                                        </div>
+                                        <div><span class="small text-gray-500">December 2, 2019</span>
+                                            <p>Spending Alert: We've noticed unusually high spending for your account.</p>
+                                        </div>
+                                    </a><a class="text-center dropdown-item small text-gray-500" href="#">Show All Alerts</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="badge bg-danger badge-counter">7</span><i class="fas fa-envelope fa-fw"></i></a>
+                                <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
+                                    <h6 class="dropdown-header">alerts center</h6><a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar4.jpeg">
+                                            <div class="bg-success status-indicator"></div>
+                                        </div>
+                                        <div class="fw-bold">
+                                            <div class="text-truncate"><span>Hi there! I am wondering if you can help me with a problem I've been having.</span></div>
+                                            <p class="small text-gray-500 mb-0">Emily Fowler - 58m</p>
+                                        </div>
+                                    </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar2.jpeg">
+                                            <div class="status-indicator"></div>
+                                        </div>
+                                        <div class="fw-bold">
+                                            <div class="text-truncate"><span>I have the photos that you ordered last month!</span></div>
+                                            <p class="small text-gray-500 mb-0">Jae Chun - 1d</p>
+                                        </div>
+                                    </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar3.jpeg">
+                                            <div class="bg-warning status-indicator"></div>
+                                        </div>
+                                        <div class="fw-bold">
+                                            <div class="text-truncate"><span>Last month's report looks great, I am very happy with the progress so far, keep up the good work!</span></div>
+                                            <p class="small text-gray-500 mb-0">Morgan Alvarez - 2d</p>
+                                        </div>
+                                    </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar5.jpeg">
+                                            <div class="bg-success status-indicator"></div>
+                                        </div>
+                                        <div class="fw-bold">
+                                            <div class="text-truncate"><span>Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</span></div>
+                                            <p class="small text-gray-500 mb-0">Chicken the Dog · 2w</p>
+                                        </div>
+                                    </a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                                </div>
+                            </div>
+                            <div class="shadow dropdown-list dropdown-menu dropdown-menu-end" aria-labelledby="alertsDropdown"></div>
+                        </li>
+                        <div class="d-none d-sm-block topbar-divider"></div>
+                        <li class="nav-item dropdown no-arrow">
+                            <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small" id="user-name"></span></a>
+                                <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"><a class="dropdown-item" href="#"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile</a>
+                                    <div class="dropdown-divider"></div><a class="dropdown-item" id="logoutButton" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul><button class="btn rounded-circle border-0" id="sidebarToggle-1" type="button"></button>
+                </div>
+            </nav>
+            <div id="content">
+                <div class="row">
+                    <div class="col"><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Preliminary Findings</title>
+    <link rel="stylesheet" href="path/to/your/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fc;
+        }
+
+        .container-box {
+            background-color: #ffffff;
+            border: none;
+            box-shadow: 0 0.15rem 1.75rem 0 rgba(58,59,69,0.15);
+            border-radius: 0.35rem;
+            padding: 20px;
+            margin: 20px auto;
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        .main-heading {
+            font-size: 32px; /* Adjusted for larger text */
+            color: #4e73df;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .section-header {
+            font-size: 20px;
+            color: #4e73df;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #5a5c69;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-4">
+    <!-- Main Content -->
+    <div class="container-box">
+        <!-- Main Heading -->
+        <h1 class="main-heading">Preliminary Findings</h1>
+
+        <!-- Study Date/Time -->
+        <div class="section-header">Study Date/Time</div>
+        <p><strong>Study Date/Time:</strong> <span id="studyDateTime"></span></p>
+
+        <!-- Key Findings -->
+        <div class="section-header">Key Findings from Past Reports</div>
+        <p><strong>Key Findings:</strong> <span id="keyFindings"></span></p>
+
+        <!-- Relevant History -->
+        <div class="section-header">Relevant History or Changes</div>
+        <p><strong>Relevant History:</strong> <span id="relevantHistory"></span></p>
+
+        <!-- Concerns or Anomalies -->
+        <div class="section-header">Concerns or Anomalies to Watch</div>
+        <p><strong>Concerns:</strong> <span id="concerns"></span></p>
+
+        <!-- Suggestions -->
+        <div class="section-header">Suggestions for Current Exam Focus</div>
+        <p><strong>Suggestions:</strong> <span id="suggestions"></span></p>
+
+        <!-- Radiologist Notes -->
+        <div class="section-header">Radiologist Notes</div>
+        <p><strong>Radiologist Notes:</strong> <span id="radiologistNotes"></span></p>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const patientId = urlParams.get('patientId');
+        const reportId = urlParams.get('reportId');
+
+        if (!patientId || !reportId) {
+            alert('Required report data is missing.');
+            window.location.href = 'index-dash.html';
+            return;
+        }
+
+        fetch(`https://spring-boot-backend-dot-reference-node-426102-r4.uk.r.appspot.com/api/patient/getPreliminaryFindings?patientId=${patientId}&reportId=${reportId}`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                document.getElementById('studyDateTime').textContent = data.studyDateTime || 'N/A';
+                document.getElementById('keyFindings').textContent = data.keyFindings || 'N/A';
+                document.getElementById('relevantHistory').textContent = data.relevantHistory || 'N/A';
+                document.getElementById('concerns').textContent = data.concerns || 'N/A';
+                document.getElementById('suggestions').textContent = data.suggestions || 'N/A';
+                document.getElementById('radiologistNotes').textContent = data.radiologistNotes || 'N/A';
+            })
+            .catch(error => {
+                console.error('Error fetching preliminary findings:', error);
+                alert('Failed to fetch preliminary findings.');
+                window.location.href = 'index-dash.html';
+            });
+    });
+</script>
+
+</body>
+</html>
+</div>
+                </div>
+            </div>
+            <footer class="bg-white sticky-footer" style="background: #121212;">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"></div>
+                </div>
+            </footer>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/firebase-init.mjs" type="module"></script>
+    <script src="assets/js/logout.mjs" type="module"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>

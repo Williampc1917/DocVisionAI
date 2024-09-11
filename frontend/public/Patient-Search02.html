@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Table - DocVisionAI</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/Features-Cards-icons.css">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <nav class="navbar align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0 navbar-dark" style="background: rgb(78, 115, 223);">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -64 640 640" width="1em" height="1em" fill="currentColor" style="font-size: 42px;">
+                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                        <path d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM288 160c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v48h48c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H352v48c0 8.8-7.2 16-16 16H304c-8.8 0-16-7.2-16-16V272H240c-8.8 0-16-7.2-16-16V224c0-8.8 7.2-16 16-16h48V160z"></path>
+                    </svg>
+                    <div class="sidebar-brand-icon rotate-n-15"></div>
+                    <div class="sidebar-brand-text mx-3"><span>DocVisionAI</span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item"><a class="nav-link" href="index-dash.html"><i class="fas fa-tachometer-alt" style="font-size: 13px;"></i><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.html"><i class="fas fa-user" style="font-size: 14px;"></i><span>Profile</span></a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link" href="Patient-Search-only.html"><i class="fas fa-search" style="font-size: 14px;"></i><span>Patient Search</span></a><a class="nav-link" href="Start-quick-analysis-1.html"><i class="fas fa-tachometer-alt" style="font-size: 13px;"></i><span>Quick Analysis</span></a><a class="nav-link" href="Start-analysis.html"><i class="fas fa-file-medical" style="font-size: 16px;"></i><span>Start Analysis</span></a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-expand bg-white shadow mb-4 topbar">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                        <ul class="navbar-nav"></ul>
+                        <h3 class="text-dark mb-0" style="font-weight: bold;font-size: 25px;">Patient Search</h3>
+                        <ul class="navbar-nav flex-nowrap ms-auto">
+                            <li class="nav-item dropdown no-arrow mx-1">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"></a>
+                                    <div class="dropdown-menu dropdown-list dropdown-menu-end animated--grow-in">
+                                        <h6 class="dropdown-header">alerts center</h6><a class="d-flex align-items-center dropdown-item" href="#">
+                                            <div class="me-3">
+                                                <div class="bg-primary icon-circle"><i class="fas fa-file-alt text-white"></i></div>
+                                            </div>
+                                            <div><span class="small text-gray-500">December 12, 2019</span>
+                                                <p>A new monthly report is ready to download!</p>
+                                            </div>
+                                        </a><a class="d-flex align-items-center dropdown-item" href="#">
+                                            <div class="me-3">
+                                                <div class="bg-success icon-circle"><i class="fas fa-donate text-white"></i></div>
+                                            </div>
+                                            <div><span class="small text-gray-500">December 7, 2019</span>
+                                                <p>$290.29 has been deposited into your account!</p>
+                                            </div>
+                                        </a><a class="d-flex align-items-center dropdown-item" href="#">
+                                            <div class="me-3">
+                                                <div class="bg-warning icon-circle"><i class="fas fa-exclamation-triangle text-white"></i></div>
+                                            </div>
+                                            <div><span class="small text-gray-500">December 2, 2019</span>
+                                                <p>Spending Alert: We've noticed unusually high spending for your account.</p>
+                                            </div>
+                                        </a><a class="text-center dropdown-item small text-gray-500" href="#">Show All Alerts</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown no-arrow mx-1">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"></a>
+                                    <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
+                                        <h6 class="dropdown-header">alerts center</h6><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar4.jpeg">
+                                                <div class="bg-success status-indicator"></div>
+                                            </div>
+                                            <div class="fw-bold">
+                                                <div class="text-truncate"><span>Hi there! I am wondering if you can help me with a problem I've been having.</span></div>
+                                                <p class="small text-gray-500 mb-0">Emily Fowler - 58m</p>
+                                            </div>
+                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar2.jpeg">
+                                                <div class="status-indicator"></div>
+                                            </div>
+                                            <div class="fw-bold">
+                                                <div class="text-truncate"><span>I have the photos that you ordered last month!</span></div>
+                                                <p class="small text-gray-500 mb-0">Jae Chun - 1d</p>
+                                            </div>
+                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar3.jpeg">
+                                                <div class="bg-warning status-indicator"></div>
+                                            </div>
+                                            <div class="fw-bold">
+                                                <div class="text-truncate"><span>Last month's report looks great, I am very happy with the progress so far, keep up the good work!</span></div>
+                                                <p class="small text-gray-500 mb-0">Morgan Alvarez - 2d</p>
+                                            </div>
+                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar5.jpeg">
+                                                <div class="bg-success status-indicator"></div>
+                                            </div>
+                                            <div class="fw-bold">
+                                                <div class="text-truncate"><span>Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</span></div>
+                                                <p class="small text-gray-500 mb-0">Chicken the Dog · 2w</p>
+                                            </div>
+                                        </a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                                    </div>
+                                </div>
+                                <div class="shadow dropdown-list dropdown-menu dropdown-menu-end" aria-labelledby="alertsDropdown"></div>
+                            </li>
+                            <div class="d-none d-sm-block topbar-divider"></div>
+                            <li class="nav-item dropdown no-arrow">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small" id="user-name"></span></a>
+                                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"><a class="dropdown-item" href="#"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile</a>
+                                        <div class="dropdown-divider"></div><a class="dropdown-item" id="logoutButton" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul><button class="btn rounded-circle border-0" id="sidebarToggle-1" type="button"></button>
+                    </div>
+                </nav>
+                <div class="row">
+                    <div class="col">
+                        <div class="container"><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Search</title>
+    <link rel="stylesheet" href="path/to/your/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fc;
+        }
+
+        .container-box {
+            background-color: #ffffff;
+            border: none;
+            box-shadow: 0 0.15rem 1.75rem 0 rgba(58,59,69,0.15);
+            border-radius: 0.35rem;
+            padding: 20px;
+            margin: 20px auto;
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        .form-group {
+            width: 100%;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .table-responsive {
+            display: block;
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .table {
+            width: 100%; /* Ensure the table takes up the full width of its container */
+            table-layout: auto; /* Ensures consistent column width */
+            border-collapse: separate;
+            border-spacing: 0 10px; /* Adds space between rows */
+        }
+
+        th, td {
+            white-space: nowrap;
+            padding: 12px 15px; /* Consistent padding for all cells */
+            vertical-align: middle; /* Vertically center content */
+        }
+
+        .sticky-column {
+            position: -webkit-sticky;
+            position: sticky;
+            left: 0;
+            background-color: #ffffff;
+            z-index: 2;
+        }
+
+        .btn-primary {
+            background-color: #4e73df;
+            border-color: #4e73df;
+            border-radius: 0.35rem;
+        }
+
+        .btn-primary:hover {
+            background-color: #2e59d9;
+            border-color: #2653d4;
+        }
+
+        .report-container {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .report-preview {
+            border: 1px solid #dee2e6;
+            border-radius: 0.35rem;
+            padding: 20px;
+            height: 400px;
+            overflow-y: auto;
+            background-color: #f8f9fc;
+        }
+
+        .report-list {
+            border: 1px solid #dee2e6;
+            border-radius: 0.35rem;
+            padding: 20px;
+            height: 400px;
+            overflow-y: auto;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .pagination button {
+            background-color: #4e73df;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            margin: 0 5px;
+            cursor: pointer;
+            border-radius: 0.35rem;
+        }
+
+        .pagination button:hover {
+            background-color: #2e59d9;
+        }
+
+        .pagination button:disabled {
+            background-color: #d1d3e2;
+            cursor: not-allowed;
+        }
+
+        .chat-container {
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 0.35rem;
+            padding: 20px;
+            margin-top: 20px;
+            width: 100%;
+            box-shadow: 0 0.15rem 1.75rem 0 rgba(58,59,69,0.15);
+            display: none; /* Initially hidden */
+        }
+
+        .chat-box {
+            height: 300px;
+            overflow-y: auto;
+            padding: 15px;
+            border: 1px solid #dee2e6;
+            border-radius: 0.35rem;
+            background-color: #f8f9fc;
+        }
+
+        .chat-input {
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chat-input textarea {
+            width: 85%;
+            resize: none;
+            border-radius: 0.35rem;
+            padding: 10px;
+            border: 1px solid #dee2e6;
+            background-color: #f8f9fc;
+        }
+
+        .chat-input button {
+            width: 12%;
+            padding: 10px;
+            background-color: #4e73df;
+            border: none;
+            border-radius: 0.35rem;
+            color: white;
+            cursor: pointer;
+        }
+
+        .chat-input button:hover {
+            background-color: #2e59d9;
+        }
+
+        .btn-action {
+            width: 70px;  /* You can adjust this value to whatever width works best */
+            text-align: center;  /* Center the text inside the buttons */
+        }
+
+        @media (max-width: 768px) {
+            .container-box {
+                padding: 10px;
+            }
+            .table thead {
+                display: none;
+            }
+            .table, .table tbody, .table tr, .table td {
+                display: block;
+                width: 100%;
+            }
+            .table tr {
+                margin-bottom: 15px;
+                border: 1px solid #dee2e6;
+                border-radius: 0.35rem;
+                padding: 10px;
+            }
+            .table td {
+                text-align: left;
+                padding-left: 0;
+                position: relative;
+                padding: 0.75rem;
+                border-top: none;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .form-control {
+        width: 100%;  /* Make the text boxes take up the full width */
+        max-width: 100%;  /* Ensure it doesn't exceed the container width */
+        min-height: 50px;  /* Set a minimum height */
+        resize: vertical;  /* Allow vertical resizing only */
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;  /* Add some space between the form groups */
+    }
+
+    textarea.form-control {
+        max-height: 150px;  /* Maximum height before scrolling */
+    }
+
+    /* Ensure the form takes up the full width */
+    form {
+        width: 100%;
+    }
+            .table td::before {
+                content: attr(data-label);
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="container-box">
+                    <div class="text-center">
+                        <div class="search-bar mb-4">
+                            <input type="text" id="searchBar" class="form-control" placeholder="Search patient by ID or Name">
+                            <select id="searchType" class="form-control mt-2">
+                                <option value="patientId">Search by ID</option>
+                                <option value="fullName">Search by Name</option>
+                            </select>
+                            <button type="button" class="btn btn-primary mt-2" onclick="searchPatient()">Search</button>
+                        </div>
+                        <div id="patientNotFound" class="alert alert-warning" style="display: none;">
+                            Patient not found.
+                        </div>
+                        <button type="button" class="btn btn-primary mb-4" onclick="redirectToAddPatient()">Add New Patient</button>
+                        <div id="loading" style="display: none;">
+                            <div class="spinner-border text-primary" role="status"></div>
+                        </div>
+                        <div class="table-responsive mt-4">
+                            <h5>Patient Information</h5>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="sticky-column">Patient ID</th>
+                                        <th scope="col">Full Name</th>
+                                        <th scope="col">Date of Birth</th>
+                                        <th scope="col">Gender</th>
+                                        <th scope="col">Contact Info</th>
+                                        <th scope="col">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="patient-table-body">
+                                    <!-- Rows will be dynamically added here -->
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- New Report Container with Two Columns -->
+                        <div id="reportContainer" class="container-box report-container">
+                            <div class="row">
+                                <!-- Left Column: Report List -->
+                                <div class="col-md-6">
+                                    <div class="report-list">
+                                        <div class="table-responsive">
+                                            <h5>Patient Reports</h5>
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Report Date</th>
+                                                        <th scope="col">Report Type</th>
+                                                        <th scope="col">Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="report-table-body">
+                                                    <!-- Rows will be dynamically added here -->
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="pagination" id="paginationControls">
+                                            <!-- Pagination controls will be dynamically added here -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Right Column: Report Preview -->
+                                <div class="col-md-6">
+                                    <div class="report-preview" id="reportPreview">
+                                        <h5>Report Preview</h5>
+                                        <p>Select a report to preview...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                       <div id="preliminaryFindingsContainer" class="container-box mt-4" style="display: none;">
+    <h5>Preliminary Findings</h5>
+    <form id="preliminaryFindingsForm">
+        <div class="form-group">
+            <label for="studyDateTime">Study Date/Time</label>
+            <input type="datetime-local" id="studyDateTime" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="keyFindings">Key Findings from Past Reports</label>
+            <textarea id="keyFindings" class="form-control" rows="3" placeholder="Summarize significant findings from past reports (e.g., recurring issues or notable trends)"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="relevantHistory">Relevant History or Changes</label>
+            <textarea id="relevantHistory" class="form-control" rows="3" placeholder="Note any relevant changes in the patient's condition or history"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="concerns">Concerns or Anomalies to Watch</label>
+            <textarea id="concerns" class="form-control" rows="3" placeholder="List any concerns or anomalies from past reports to watch in the current exam"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="suggestions">Suggestions for Current Exam Focus</label>
+            <textarea id="suggestions" class="form-control" rows="3" placeholder="Provide suggestions or areas of focus for the current examination based on past reports"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="radiologistNotes">Radiologist Notes</label>
+            <textarea id="radiologistNotes" class="form-control" rows="3" placeholder="Add any additional comments or observations"></textarea>
+        </div>
+        <button type="button" class="btn btn-primary mt-3" onclick="savePreliminaryFindings()">Save Preliminary Findings</button>
+    </form>
+</div>
+
+                        <!-- AI Chatbox Container -->
+<div id="chatContainer" class="chat-container">
+    <h5>Ask AI about Patient Reports</h5>
+    <div class="chat-box" id="chatBox">
+        <!-- Chat messages will appear here -->
+        <p>Use the AI Assistant to quickly summarize reports, ask specific questions, or gather key information.</p>
+    </div>
+    <div class="chat-input">
+        <textarea id="chatInput" placeholder="Message AI Assistant"></textarea>
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<!-- New Button to Proceed to Image Analysis -->
+<button type="button" class="btn btn-success mt-3" onclick="proceedToImageAnalysis()">Next: Image Upload</button>
+
+    </div>
+        </div>
+    </div>
+</div>
+</div>
+
+    <script src="path/to/your/js/bootstrap.bundle.min.js"></script>
+<script type="module">
+    // Import Firebase auth module
+    import { auth } from './firebase-init.mjs'; 
+
+     window.searchPatient = searchPatient;
+    window.viewPatient = viewPatient;
+    window.previewReport = previewReport;
+    window.viewFullReport = viewFullReport;
+    window.proceedToImageAnalysis = proceedToImageAnalysis;
+    window.savePreliminaryFindings = savePreliminaryFindings;
+    window.sendMessage = sendMessage;
+
+    // Function to get query parameters from the URL
+    function getQueryParameter(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+}
+
+// Retrieve the reportId and patientId from the URL
+const reportId = getQueryParameter('reportId');
+const patientId = getQueryParameter('patientId');
+
+console.log('Report ID:', reportId); // Log the report ID to ensure it's being captured
+console.log('Patient ID:', patientId); // Log the patient ID to ensure it's being captured
+
+if (patientId) {
+    document.addEventListener('DOMContentLoaded', () => {
+        document.getElementById('searchBar').value = patientId;
+        document.getElementById('searchType').value = 'patientId';
+        document.getElementById('searchBar').disabled = true; // Disable manual changes
+        document.getElementById('searchType').disabled = true; // Disable manual changes
+        searchPatient(reportId);  // Automatically search using the passed patientId and reportId
+    });
+}
+
+let currentPage = 1;
+const reportsPerPage = 5;
+
+function searchPatient(reportId) {
+    const searchValue = document.getElementById('searchBar').value.trim();
+    const searchType = document.getElementById('searchType').value;
+
+    if (searchValue === "") {
+        alert("Please enter a search value.");
+        return;
+    }
+
+    document.getElementById('loading').style.display = 'block';
+    document.getElementById('patientNotFound').style.display = 'none';
+
+    const searchEndpoint = `https://spring-boot-backend-dot-reference-node-426102-r4.uk.r.appspot.com/api/patient/search?${searchType}=${searchValue}`;
+
+    fetch(searchEndpoint, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(response => {
+        document.getElementById('loading').style.display = 'none';
+        if (!response.ok) {
+            return Promise.reject("Patient not found");
+        }
+        return response.json();
+    })
+    .then(data => {
+        const patientTableBody = document.getElementById('patient-table-body');
+        patientTableBody.innerHTML = ''; // Clear previous results
+
+        const newRow = document.createElement('tr');
+        newRow.innerHTML = `
+            <td data-label="Patient ID">${data.patientId}</td>
+            <td data-label="Full Name">${data.fullName}</td>
+            <td data-label="Date of Birth">${data.dob}</td>
+            <td data-label="Gender">${data.gender}</td>
+            <td data-label="Contact Info">${data.contactInfo}</td>
+            <td data-label="Actions">
+                <button class="btn btn-sm btn-primary" onclick="viewPatient('${data.patientId}', '${reportId}')">View</button>
+            </td>
+        `;
+        patientTableBody.appendChild(newRow);
+    })
+    .catch(error => {
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('patientNotFound').style.display = 'block';
+    });
+}
+
+let currentPatientId = null; // Global variable to store the current patientId
+
+// Function to view a specific patient's reports
+function viewPatient(patientId, reportId) {
+    currentPatientId = patientId; // Store the patientId globally
+    const reportEndpoint = `https://spring-boot-backend-dot-reference-node-426102-r4.uk.r.appspot.com/api/patient/reports?patientId=${patientId}`;
+
+    fetch(reportEndpoint, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(response => {
+        if (!response.ok) {
+            return Promise.reject("Failed to fetch reports");
+        }
+        return response.json();
+    })
+    .then(data => {
+        if (data.length === 0) {
+            // If no reports are found, show a message
+            alert("No reports found for this patient.");
+        } else {
+            displayReports(data, currentPage);  // Pass the data to the displayReports function
+
+            // Show the report container
+            document.getElementById('reportContainer').style.display = 'block';
+
+            // Show the Preliminary Findings container and check for existing preliminary findings
+            checkPreliminaryFindings(patientId, reportId); // Pass the correct reportId from the URL
+
+            // Show the chat container
+            document.getElementById('chatContainer').style.display = 'block';
+        }
+    })
+    .catch(error => {
+        console.error("Error fetching reports:", error);
+        alert("An error occurred while fetching reports. Please try again later.");
+    });
+}
+
+function checkPreliminaryFindings(patientId, reportId) {
+    console.log("Checking preliminary findings with reportId:", reportId); // Log the reportId
+    const preliminaryFindingsEndpoint = `https://spring-boot-backend-dot-reference-node-426102-r4.uk.r.appspot.com/api/patient/checkPreliminaryFindings?patientId=${patientId}&reportId=${reportId}`;
+
+    fetch(preliminaryFindingsEndpoint, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.exists) {
+            // If preliminary findings exist, populate the form with the data
+            document.getElementById('studyDateTime').value = data.studyDateTime;
+            document.getElementById('keyFindings').value = data.keyFindings;
+            document.getElementById('relevantHistory').value = data.relevantHistory;
+            document.getElementById('concerns').value = data.concerns;
+            document.getElementById('suggestions').value = data.suggestions;
+            document.getElementById('radiologistNotes').value = data.radiologistNotes;
+
+            // Disable form fields to prevent editing
+            document.querySelectorAll('#preliminaryFindingsForm input, #preliminaryFindingsForm textarea').forEach(field => {
+                field.disabled = true;
+            });
+
+            // Change the button to "View Preliminary Findings"
+            const saveButton = document.querySelector('#preliminaryFindingsForm button');
+            saveButton.textContent = 'View Preliminary Findings';
+            saveButton.classList.remove('btn-primary');
+            saveButton.classList.add('btn-secondary');
+            saveButton.onclick = () => {
+                window.open(`viewPreliminaryFindings.html?patientId=${patientId}&reportId=${reportId}`, '_blank');
+            };
+        } else {
+            // If no preliminary findings exist, show the form normally
+            document.getElementById('preliminaryFindingsForm').reset(); // Clear the form
+            document.querySelectorAll('#preliminaryFindingsForm input, #preliminaryFindingsForm textarea').forEach(field => {
+                field.disabled = false; // Ensure fields are editable
+            });
+        }
+
+        // Show the Preliminary Findings container
+        document.getElementById('preliminaryFindingsContainer').style.display = 'block';
+    })
+    .catch(error => {
+        console.error("Error checking preliminary findings:", error);
+        alert("An error occurred while checking for preliminary findings. Please try again later.");
+    });
+}
+
+    // Function to display the reports in the table
+    function displayReports(data, page) {
+        console.log("Displaying reports for page:", page, "Total reports:", data.length);
+        const reportTableBody = document.getElementById('report-table-body');
+        const start = (page - 1) * reportsPerPage;
+        const end = start + reportsPerPage;
+        const paginatedData = data.slice(start, end);
+
+        reportTableBody.innerHTML = ''; // Clear previous results
+
+        paginatedData.forEach(report => {
+            console.log("Displaying report:", report);  // Debugging line
+            console.log("Report Data:", report);
+            console.log("Report Name:", report.reportName);
+            const reportRow = document.createElement('tr');
+            reportRow.innerHTML = `
+                <td data-label="Report Date">${report.reportDate}</td>
+                <td data-label="Report Type">${report.typeOfStudy}</td>
+                <td data-label="Actions">
+                    <button class="btn btn-sm btn-primary btn-action" onclick="previewReport('${report.reportId}')">Preview</button>
+                    <button class="btn btn-sm btn-secondary btn-action" onclick="viewFullReport('${report.reportId}')">View</button>
+                </td>
+            `;
+            reportTableBody.appendChild(reportRow);
+        });
+
+        setupPagination(data.length, data);  // Pass the full data array
+    }
+
+    
+
+        // Function to setup pagination controls
+function setupPagination(totalReports, data) {
+    const paginationControls = document.getElementById('paginationControls');
+    const totalPages = Math.ceil(totalReports / reportsPerPage);
+    paginationControls.innerHTML = ''; // Clear previous controls
+
+    for (let i = 1; i <= totalPages; i++) {
+        const pageButton = document.createElement('button');
+        pageButton.innerText = i;
+        pageButton.onclick = () => {
+            currentPage = i;
+            displayReports(data, currentPage);  // Pass the full data array here
+        };
+        if (i === currentPage) {
+            pageButton.disabled = true;
+        }
+        paginationControls.appendChild(pageButton);
+    }
+}
+
+
+// Function to preview a specific report
+function previewReport(reportId) {
+    const reportPreview = document.getElementById('reportPreview');
+    const detailedReportEndpoint = `https://spring-boot-backend-dot-reference-node-426102-r4.uk.r.appspot.com/api/patient/getReport?patientId=${currentPatientId}&reportName=${reportId}`;
+
+    fetch(detailedReportEndpoint, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(response => {
+        if (!response.ok) {
+            return Promise.reject("Failed to fetch detailed report");
+        }
+        return response.json();
+    })
+    .then(report => {
+        // Populate the report preview with the fetched data
+        reportPreview.innerHTML = `
+            <h5>Report Preview</h5>
+            <div class="accordion" id="reportAccordion">
+
+                <!-- Patient Information -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingPatientInfo">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePatientInfo" aria-expanded="true" aria-controls="collapsePatientInfo">
+                            Patient Information
+                        </button>
+                    </h2>
+                    <div id="collapsePatientInfo" class="accordion-collapse collapse show" aria-labelledby="headingPatientInfo" data-bs-parent="#reportAccordion">
+                        <div class="accordion-body">
+                            <p><strong>Patient Name:</strong> ${report.patientName}</p>
+                            <p><strong>DOB:</strong> ${report.patientDOB}</p>
+                            <p><strong>Patient ID:</strong> ${report.patientID}</p>
+                            <p><strong>Date of Examination:</strong> ${report.dateOfStudy}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Examination Details -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingExamDetails">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExamDetails" aria-expanded="false" aria-controls="collapseExamDetails">
+                            Examination Details
+                        </button>
+                    </h2>
+                    <div id="collapseExamDetails" class="accordion-collapse collapse" aria-labelledby="headingExamDetails" data-bs-parent="#reportAccordion">
+                        <div class="accordion-body">
+                            <p><strong>Type of Study:</strong> ${report.typeOfStudy}</p>
+                            <p><strong>Number of Views:</strong> ${report.numberOfViews}</p>
+                            <p><strong>Technique:</strong> ${report.technique}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Clinical History -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingClinicalHistory">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseClinicalHistory" aria-expanded="false" aria-controls="collapseClinicalHistory">
+                            Clinical History
+                        </button>
+                    </h2>
+                    <div id="collapseClinicalHistory" class="accordion-collapse collapse" aria-labelledby="headingClinicalHistory" data-bs-parent="#reportAccordion">
+                        <div class="accordion-body">
+                            <p><strong>Clinical History:</strong> ${report.clinicalHistory}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Findings -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFindings">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFindings" aria-expanded="false" aria-controls="collapseFindings">
+                            Findings
+                        </button>
+                    </h2>
+                    <div id="collapseFindings" class="accordion-collapse collapse" aria-labelledby="headingFindings" data-bs-parent="#reportAccordion">
+                        <div class="accordion-body">
+                            <p><strong>Lungs:</strong> ${report.lungs}</p>
+                            <p><strong>Right Lung:</strong> ${report.rightLung}</p>
+                            <p><strong>Left Lung:</strong> ${report.leftLung}</p>
+                            <p><strong>Pleura:</strong> ${report.pleura}</p>
+                            <p><strong>Airways:</strong> ${report.airways}</p>
+                            <p><strong>Impressions:</strong> ${report.impression}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Signature -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSignature">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSignature" aria-expanded="false" aria-controls="collapseSignature">
+                            Signature
+                        </button>
+                    </h2>
+                    <div id="collapseSignature" class="accordion-collapse collapse" aria-labelledby="headingSignature" data-bs-parent="#reportAccordion">
+                        <div class="accordion-body">
+                            <p><strong>Radiologist Name:</strong> ${report.radiologistName}</p>
+                            <p><strong>Radiologist Title:</strong> ${report.radiologistTitle}</p>
+                            <p><strong>Report Date:</strong> ${report.reportDate}</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        `;
+    })
+    .catch(error => {
+        console.error("Error fetching detailed report:", error);
+    });
+}
+
+        function sendMessage() {
+    const chatBox = document.getElementById('chatBox');
+    const chatInput = document.getElementById('chatInput').value;
+
+    if (chatInput.trim() === "") {
+        return;
+    }
+
+    // Add user's message to the chat box
+    const userMessage = `<p><strong>You:</strong> ${chatInput}</p>`;
+    chatBox.innerHTML += userMessage;
+
+    // Clear the input
+    document.getElementById('chatInput').value = "";
+
+    // Scroll to the bottom of the chat box
+    chatBox.scrollTop = chatBox.scrollHeight;
+
+    // Fetch the currently authenticated user
+    const user = auth.currentUser;
+
+    if (user) {
+        const userId = user.uid; // Fetch the userId from the authenticated user
+        console.log('Authenticated user ID:', userId);
+
+        // API call to the Flask backend, including userId in the request body: http://localhost:4000/api/ask_ai
+        fetch('https://medical-llm-dot-reference-node-426102-r4.uk.r.appspot.com/api/ask_ai', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                user_id: userId,             // Include userId in the request body
+                patient_id: currentPatientId, // Assuming currentPatientId is already defined globally
+                question: chatInput
+            }),
+        })
+        .then(response => response.text())
+        .then(data => {
+            // Add AI's response to the chat box
+            const aiMessage = `<p><strong>AI:</strong> ${data}</p>`;
+            chatBox.innerHTML += aiMessage;
+
+            // Scroll to the bottom of the chat box
+            chatBox.scrollTop = chatBox.scrollHeight;
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+            const errorMessage = `<p><strong>AI:</strong> Sorry, something went wrong. Please try again later.</p>`;
+            chatBox.innerHTML += errorMessage;
+            chatBox.scrollTop = chatBox.scrollHeight;
+        });
+    } else {
+        console.error('User is not signed in.');
+        alert('No user is signed in. Please sign in to send messages.');
+    }
+   
+        }
+
+        function redirectToAddPatient() {
+            window.location.href = 'Add-New-Patient.html';
+        }
+
+        function showAddPatientForm() {
+            document.getElementById('addPatientModal').style.display = 'block';
+        }
+
+        function closeAddPatientModal() {
+            document.getElementById('addPatientModal').style.display = 'none';
+        }
+
+        function viewFullReport(reportId) {
+    if (!currentPatientId) {
+        console.error("Patient ID is not set.");
+        return;
+    }
+    
+    console.log("Patient ID:", currentPatientId, "Report ID:", reportId); // Debugging line
+    const reportUrl = `viewReport.html?patientId=${currentPatientId}&reportName=${reportId}`;
+    window.open(reportUrl, '_blank'); // Open the report in a new tab
+}
+
+    function proceedToImageAnalysis() {
+    // Open the next page in a new tab with the necessary parameters
+    window.open(`Start-pnu-analysis-03.html?reportId=${reportId}&patientId=${patientId}`, '_blank');
+
+}
+
+    function savePreliminaryFindings() {
+    const studyDateTime = document.getElementById('studyDateTime').value;
+    const keyFindings = document.getElementById('keyFindings').value;
+    const relevantHistory = document.getElementById('relevantHistory').value;
+    const concerns = document.getElementById('concerns').value;
+    const suggestions = document.getElementById('suggestions').value;
+    const radiologistNotes = document.getElementById('radiologistNotes').value;
+
+    const requestData = {
+        reportId: reportId,  // Assuming reportId is already defined in your script
+        patientId: patientId,  // Assuming patientId is already defined in your script
+        studyDateTime,
+        keyFindings,
+        relevantHistory,
+        concerns,
+        suggestions,
+        radiologistNotes
+    };
+
+    fetch('https://spring-boot-backend-dot-reference-node-426102-r4.uk.r.appspot.com/api/patient/savePreliminaryFindings', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(requestData)
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.status === 'success') {
+            alert('Preliminary findings saved successfully!');
+            
+            // Disable form fields to prevent editing
+            document.querySelectorAll('#preliminaryFindingsForm input, #preliminaryFindingsForm textarea').forEach(field => {
+                field.disabled = true;
+            });
+
+            // Replace "Save Preliminary Findings" button with a "View" button
+            const saveButton = document.querySelector('#preliminaryFindingsForm button');
+            saveButton.textContent = 'View Preliminary Findings';
+            saveButton.classList.remove('btn-primary');
+            saveButton.classList.add('btn-secondary');
+            saveButton.onclick = () => {
+                // Redirect to a new page that displays the full preliminary findings
+                window.open(`viewPreliminaryFindings.html?patientId=${patientId}&reportId=${reportId}`, '_blank');
+            };
+        } else {
+            alert('Failed to save preliminary findings: ' + data.message);
+        }
+    })
+    .catch(error => {
+        console.error('Error saving preliminary findings:', error);
+        alert('An error occurred while saving the preliminary findings. Please try again.');
+    });
+}
+    </script>
+</body>
+</html>
+
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/firebase-init.mjs" type="module"></script>
+    <script src="assets/js/index.mjs" type="module"></script>
+    <script src="assets/js/logout.mjs" type="module"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Profile - DocVisionAI</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/Features-Cards-icons.css">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <nav class="navbar align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0 navbar-dark" style="background: rgb(78, 115, 223);">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -64 640 640" width="1em" height="1em" fill="currentColor" style="font-size: 42px;">
+                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                        <path d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM288 160c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v48h48c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H352v48c0 8.8-7.2 16-16 16H304c-8.8 0-16-7.2-16-16V272H240c-8.8 0-16-7.2-16-16V224c0-8.8 7.2-16 16-16h48V160z"></path>
+                    </svg>
+                    <div class="sidebar-brand-icon rotate-n-15"></div>
+                    <div class="sidebar-brand-text mx-3"><span>DocVisionAI</span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item"><a class="nav-link" href="index-dash.html"><i class="fas fa-tachometer-alt" style="font-size: 13px;"></i><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="profile.html"><i class="fas fa-user" style="font-size: 14px;"></i><span>Profile</span></a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link" href="Patient-Search-only.html"><i class="fas fa-search" style="font-size: 14px;"></i><span>Patient Search</span></a><a class="nav-link" href="Start-quick-analysis-1.html"><i class="fas fa-tachometer-alt" style="font-size: 13px;"></i><span>Quick Analysis</span></a><a class="nav-link" href="Start-analysis.html"><i class="fas fa-file-medical" style="font-size: 16px;"></i><span>Start Analysis</span></a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <nav class="navbar navbar-expand bg-white shadow mb-4 topbar">
+                <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                    <ul class="navbar-nav"></ul>
+                    <h3 class="text-dark mb-0" style="font-weight: bold;">Profile</h3>
+                    <ul class="navbar-nav flex-nowrap ms-auto">
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"></a>
+                                <div class="dropdown-menu dropdown-list dropdown-menu-end animated--grow-in">
+                                    <h6 class="dropdown-header">alerts center</h6><a class="d-flex align-items-center dropdown-item" href="#">
+                                        <div class="me-3">
+                                            <div class="bg-primary icon-circle"><i class="fas fa-file-alt text-white"></i></div>
+                                        </div>
+                                        <div><span class="small text-gray-500">December 12, 2019</span>
+                                            <p>A new monthly report is ready to download!</p>
+                                        </div>
+                                    </a><a class="d-flex align-items-center dropdown-item" href="#">
+                                        <div class="me-3">
+                                            <div class="bg-success icon-circle"><i class="fas fa-donate text-white"></i></div>
+                                        </div>
+                                        <div><span class="small text-gray-500">December 7, 2019</span>
+                                            <p>$290.29 has been deposited into your account!</p>
+                                        </div>
+                                    </a><a class="d-flex align-items-center dropdown-item" href="#">
+                                        <div class="me-3">
+                                            <div class="bg-warning icon-circle"><i class="fas fa-exclamation-triangle text-white"></i></div>
+                                        </div>
+                                        <div><span class="small text-gray-500">December 2, 2019</span>
+                                            <p>Spending Alert: We've noticed unusually high spending for your account.</p>
+                                        </div>
+                                    </a><a class="text-center dropdown-item small text-gray-500" href="#">Show All Alerts</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"></a>
+                                <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
+                                    <h6 class="dropdown-header">alerts center</h6><a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar4.jpeg">
+                                            <div class="bg-success status-indicator"></div>
+                                        </div>
+                                        <div class="fw-bold">
+                                            <div class="text-truncate"><span>Hi there! I am wondering if you can help me with a problem I've been having.</span></div>
+                                            <p class="small text-gray-500 mb-0">Emily Fowler - 58m</p>
+                                        </div>
+                                    </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar2.jpeg">
+                                            <div class="status-indicator"></div>
+                                        </div>
+                                        <div class="fw-bold">
+                                            <div class="text-truncate"><span>I have the photos that you ordered last month!</span></div>
+                                            <p class="small text-gray-500 mb-0">Jae Chun - 1d</p>
+                                        </div>
+                                    </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar3.jpeg">
+                                            <div class="bg-warning status-indicator"></div>
+                                        </div>
+                                        <div class="fw-bold">
+                                            <div class="text-truncate"><span>Last month's report looks great, I am very happy with the progress so far, keep up the good work!</span></div>
+                                            <p class="small text-gray-500 mb-0">Morgan Alvarez - 2d</p>
+                                        </div>
+                                    </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar5.jpeg">
+                                            <div class="bg-success status-indicator"></div>
+                                        </div>
+                                        <div class="fw-bold">
+                                            <div class="text-truncate"><span>Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</span></div>
+                                            <p class="small text-gray-500 mb-0">Chicken the Dog · 2w</p>
+                                        </div>
+                                    </a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                                </div>
+                            </div>
+                            <div class="shadow dropdown-list dropdown-menu dropdown-menu-end" aria-labelledby="alertsDropdown"></div>
+                        </li>
+                        <div class="d-none d-sm-block topbar-divider"></div>
+                        <li class="nav-item dropdown no-arrow">
+                            <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small" id="user-name"></span></a>
+                                <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"><a class="dropdown-item" href="#"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile</a>
+                                    <div class="dropdown-divider"></div><a class="dropdown-item" id="logoutButton" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul><button class="btn rounded-circle border-0" id="sidebarToggle-1" type="button"></button>
+                </div>
+            </nav>
+            <div id="content">
+                <div class="container-fluid">
+                    <div class="row mb-3">
+                        <div class="col"><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Settings</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fc;
+    }
+    .card {
+      background-color: #ffffff;
+      border: none;
+      box-shadow: 0 0.15rem 1.75rem 0 rgba(58,59,69,0.15);
+      border-radius: 0.35rem;
+    }
+    .card-header {
+      background-color: #ffffff;
+      border-bottom: 1px solid #e3e6f0;
+      color: #4e73df !important;
+      font-weight: 700;
+    }
+    .form-control {
+      background-color: #f8f9fc;
+      border: 1px solid #d1d3e2;
+      color: rgb(133, 135, 150) !important;
+      border-radius: 0.35rem;
+    }
+    .form-control:focus {
+      border-color: #4e73df;
+      box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+    }
+    .btn-primary {
+      background-color: #4e73df;
+      border-color: #4e73df;
+      border-radius: 0.35rem;
+    }
+    .btn-primary:hover {
+      background-color: #2e59d9;
+      border-color: #2653d4;
+    }
+    .btn-secondary {
+      background-color: #d1d3e2;
+      border-color: #d1d3e2;
+      border-radius: 0.35rem;
+    }
+    .btn-secondary:hover {
+      background-color: #c1c3d2;
+      border-color: #b1b3c2;
+    }
+    label {
+      color: rgb(133,135,150);
+      font-weight: 600;
+    }
+    .message {
+      margin-top: 15px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-12">
+        <form id="profile-settings-form" style="padding: 20px;">
+          
+          <!-- Personal Information -->
+          <div class="card">
+            <div class="card-header">
+              Personal Information
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" class="form-control" id="fullName" name="fullName" readonly>
+              </div>
+              <div class="form-group">
+                <label for="jobTitle">Job Title</label>
+                <input type="text" class="form-control" id="jobTitle" name="jobTitle" readonly>
+              </div>
+              <div class="form-group">
+                <label for="specialty">Specialty</label>
+                <input type="text" class="form-control" id="specialty" name="specialty" readonly>
+              </div>
+            </div>
+          </div>
+
+          <!-- Professional Information -->
+          <div class="card mt-3">
+            <div class="card-header">
+              Professional Information
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <label for="institution">Institution/Organization</label>
+                <input type="text" class="form-control" id="institution" name="institution" readonly>
+              </div>
+              <div class="form-group">
+                <label for="license">License/Certification Number</label>
+                <input type="text" class="form-control" id="license" name="license" readonly>
+              </div>
+              <div class="form-group">
+                <label for="reportTemplate">Report Template</label>
+                <select class="form-control" id="reportTemplate" name="reportTemplate" readonly>
+                  <option value="default">Default Template</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Buttons for Edit and Save -->
+          <div class="mt-4">
+            <button type="button" id="edit-btn" class="btn btn-primary btn-block">Edit Profile</button>
+            <div id="save-cancel-btns" style="display: none;">
+              <button type="submit" id="save-btn" class="btn btn-primary btn-block">Save Changes</button>
+              <button type="button" id="cancel-btn" class="btn btn-secondary btn-block mt-2">Cancel</button>
+            </div>
+          </div>
+
+          <!-- Message Display -->
+          <div id="message" class="message alert" role="alert"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+    import { auth } from './firebase-init.mjs'; // Import Firebase auth module
+
+    // Initialize global variables
+    let currentUserId = null;
+    let originalValues = {};  // Store original values for comparison
+    let updatedFields = {};   // Track fields that have been updated
+
+    // Define form-related variables
+    const editButton = document.getElementById('edit-btn');
+    const saveCancelButtons = document.getElementById('save-cancel-btns');
+    const formFields = document.querySelectorAll('.form-control'); // Select all form fields
+    const cancelButton = document.getElementById('cancel-btn');
+
+    // Fetch the user info from the Java Spring Boot backend
+    function fetchUserInfo(userId) {
+      fetch(`https://spring-boot-backend-dot-reference-node-426102-r4.uk.r.appspot.com/api/user/profile/${userId}`, { // Fetch user info using userId
+        method: 'GET'
+      })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Error fetching user info.');
+        }
+        return response.json();
+      })
+      .then(data => {
+        // Populate the form fields with user data
+        document.getElementById('fullName').value = data.fullName;
+        document.getElementById('jobTitle').value = data.jobTitle;
+        document.getElementById('specialty').value = data.specialty;
+        document.getElementById('institution').value = data.institution;
+        document.getElementById('license').value = data.licenseNumber;
+        document.getElementById('reportTemplate').value = data.reportTemplate;
+
+        // Store original values to track changes
+        formFields.forEach(field => {
+          originalValues[field.id] = field.value;
+        });
+      })
+      .catch(error => {
+        console.error('Error fetching user info:', error);
+      });
+    }
+
+    // Example usage with Firebase Authentication to get the current user
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        currentUserId = user.uid; // Get the current user's ID
+        fetchUserInfo(currentUserId); // Fetch the profile for the current logged-in user
+      } else {
+        console.log("No user is signed in.");
+        // Optionally, redirect to login page or display a message
+      }
+    });
+
+    // Enable form fields for editing
+    editButton.addEventListener('click', () => {
+      formFields.forEach(field => {
+        field.removeAttribute('readonly');
+        originalValues[field.id] = field.value; // Save original values
+      });
+      editButton.style.display = 'none';
+      saveCancelButtons.style.display = 'block';
+    });
+
+    // Cancel editing and reset to original values
+    cancelButton.addEventListener('click', () => {
+      formFields.forEach(field => {
+        field.value = originalValues[field.id]; // Reset to original value
+        field.setAttribute('readonly', true);
+      });
+      editButton.style.display = 'block';
+      saveCancelButtons.style.display = 'none';
+    });
+
+    // Handle Save Button click and detect updated fields
+    document.getElementById('profile-settings-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      updatedFields = {};  // Reset updated fields
+
+      formFields.forEach(field => {
+        if (field.value !== originalValues[field.id]) {
+          updatedFields[field.id] = field.value;  // Track only changed fields
+        }
+        field.setAttribute('readonly', true); // Set back to readonly
+      });
+
+      if (Object.keys(updatedFields).length > 0) {
+        // Send updated data to the backend
+        sendUpdatedInfo(updatedFields, currentUserId);
+      }
+
+      editButton.style.display = 'block';
+      saveCancelButtons.style.display = 'none';
+      document.getElementById('message').style.display = 'block';
+      document.getElementById('message').innerText = "Profile updated successfully!";
+      document.getElementById('message').classList.add('alert-success');
+    });
+
+    // Send updated info to the Java Spring Boot backend
+    function sendUpdatedInfo(updatedData, userId) {
+      fetch(`https://spring-boot-backend-dot-reference-node-426102-r4.uk.r.appspot.com/api/user/profile/${userId}`, {  // Use userId to save updated profile
+        method: 'PUT',  // Or 'POST', depending on your backend setup
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(updatedData)  // Send only the updated fields
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('User info updated successfully:', data);
+        // Optionally, update the originalValues object with the new data
+        Object.keys(updatedData).forEach(key => {
+          originalValues[key] = updatedData[key];  // Update stored original values
+        });
+      })
+      .catch(error => {
+        console.error('Error updating user info:', error);
+      });
+    }
+  </script>
+</body>
+</html></div>
+                    </div>
+                </div>
+            </div>
+            <footer class="bg-white sticky-footer" style="background: #121212;">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"></div>
+                </div>
+            </footer>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/firebase-init.mjs" type="module"></script>
+    <script src="assets/js/index.mjs" type="module"></script>
+    <script src="assets/js/logout.mjs" type="module"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>

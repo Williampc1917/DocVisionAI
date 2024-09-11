@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en" style="background: #121212;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Dashboard - DocVisionAI</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/Features-Cards-icons.css">
+</head>
+
+<body id="page-top" style="background: #121212;">
+    <div id="wrapper" style="background: #121212;">
+        <nav class="navbar align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0 navbar-dark" style="background: rgb(78, 115, 223);">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -64 640 640" width="1em" height="1em" fill="currentColor" style="font-size: 42px;">
+                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                        <path d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM288 160c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v48h48c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H352v48c0 8.8-7.2 16-16 16H304c-8.8 0-16-7.2-16-16V272H240c-8.8 0-16-7.2-16-16V224c0-8.8 7.2-16 16-16h48V160z"></path>
+                    </svg>
+                    <div class="sidebar-brand-icon rotate-n-15"></div>
+                    <div class="sidebar-brand-text mx-3"><span>DocVisionAI</span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item"><a class="nav-link active" href="index-dash.html"><i class="fas fa-tachometer-alt" style="font-size: 13px;"></i><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.html"><i class="fas fa-user" style="font-size: 14px;"></i><span>Profile</span></a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link" href="Patient-Search-only.html"><i class="fas fa-search" style="font-size: 14px;"></i><span>Patient Search</span></a><a class="nav-link" href="Start-quick-analysis-1.html"><i class="fas fa-tachometer-alt" style="font-size: 13px;"></i><span>Quick Analysis</span></a><a class="nav-link" href="Start-analysis.html"><i class="fas fa-file-medical" style="font-size: 16px;"></i><span>Start Analysis</span></a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper" style="background: #121212;">
+            <div id="content" style="background: rgb(255,255,255);">
+                <nav class="navbar navbar-expand bg-white shadow mb-4 topbar">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                        <ul class="navbar-nav"></ul>
+                        <h3 class="text-dark mb-0" style="font-weight: bold;font-size: 25px;">Dashboard</h3>
+                        <ul class="navbar-nav flex-nowrap ms-auto">
+                            <li class="nav-item dropdown no-arrow mx-1">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"></a>
+                                    <div class="dropdown-menu dropdown-list dropdown-menu-end animated--grow-in">
+                                        <h6 class="dropdown-header">alerts center</h6><a class="d-flex align-items-center dropdown-item" href="#">
+                                            <div class="me-3">
+                                                <div class="bg-primary icon-circle"><i class="fas fa-file-alt text-white"></i></div>
+                                            </div>
+                                            <div><span class="small text-gray-500">December 12, 2019</span>
+                                                <p>A new monthly report is ready to download!</p>
+                                            </div>
+                                        </a><a class="d-flex align-items-center dropdown-item" href="#">
+                                            <div class="me-3">
+                                                <div class="bg-success icon-circle"><i class="fas fa-donate text-white"></i></div>
+                                            </div>
+                                            <div><span class="small text-gray-500">December 7, 2019</span>
+                                                <p>$290.29 has been deposited into your account!</p>
+                                            </div>
+                                        </a><a class="d-flex align-items-center dropdown-item" href="#">
+                                            <div class="me-3">
+                                                <div class="bg-warning icon-circle"><i class="fas fa-exclamation-triangle text-white"></i></div>
+                                            </div>
+                                            <div><span class="small text-gray-500">December 2, 2019</span>
+                                                <p>Spending Alert: We've noticed unusually high spending for your account.</p>
+                                            </div>
+                                        </a><a class="text-center dropdown-item small text-gray-500" href="#">Show All Alerts</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown no-arrow mx-1">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"></a>
+                                    <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
+                                        <h6 class="dropdown-header">alerts center</h6><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar4.jpeg">
+                                                <div class="bg-success status-indicator"></div>
+                                            </div>
+                                            <div class="fw-bold">
+                                                <div class="text-truncate"><span>Hi there! I am wondering if you can help me with a problem I've been having.</span></div>
+                                                <p class="small text-gray-500 mb-0">Emily Fowler - 58m</p>
+                                            </div>
+                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar2.jpeg">
+                                                <div class="status-indicator"></div>
+                                            </div>
+                                            <div class="fw-bold">
+                                                <div class="text-truncate"><span>I have the photos that you ordered last month!</span></div>
+                                                <p class="small text-gray-500 mb-0">Jae Chun - 1d</p>
+                                            </div>
+                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar3.jpeg">
+                                                <div class="bg-warning status-indicator"></div>
+                                            </div>
+                                            <div class="fw-bold">
+                                                <div class="text-truncate"><span>Last month's report looks great, I am very happy with the progress so far, keep up the good work!</span></div>
+                                                <p class="small text-gray-500 mb-0">Morgan Alvarez - 2d</p>
+                                            </div>
+                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar5.jpeg">
+                                                <div class="bg-success status-indicator"></div>
+                                            </div>
+                                            <div class="fw-bold">
+                                                <div class="text-truncate"><span>Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</span></div>
+                                                <p class="small text-gray-500 mb-0">Chicken the Dog · 2w</p>
+                                            </div>
+                                        </a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                                    </div>
+                                </div>
+                                <div class="shadow dropdown-list dropdown-menu dropdown-menu-end" aria-labelledby="alertsDropdown"></div>
+                            </li>
+                            <div class="d-none d-sm-block topbar-divider"></div>
+                            <li class="nav-item dropdown no-arrow">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small" id="user-name"></span></a>
+                                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"><a class="dropdown-item" href="#"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile</a>
+                                        <div class="dropdown-divider"></div><a class="dropdown-item" id="logoutButton"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul><button class="btn rounded-circle border-0" id="sidebarToggle-1" type="button"></button>
+                    </div>
+                </nav>
+                <div class="container-fluid">
+                    <div class="d-sm-flex justify-content-between align-items-center mb-4"></div>
+                    <div class="row">
+                        <div class="col-md-6 col-xl-3 col-xxl-3 mb-4">
+                            <div class="card shadow border-left-info py-2">
+                                <div class="card-body">
+                                    <div class="row g-0 align-items-center">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-info fw-bold text-xs mb-1"><span>Pending reports</span></div>
+                                            <div class="row g-0 align-items-center">
+                                                <div class="col-auto col-xxl-9">
+                                                    <div class="text-dark fw-bold h5 mb-0 me-3"><!-- Initial Skeleton Loader -->
+<div id="pending-reports" class="skeleton-loader">Loading...</div>
+
+<script type="module">
+  import { auth } from './firebase-init.mjs';
+  import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+  const db = getFirestore();
+
+  async function fetchAndDisplayPendingReports() {
+    const user = auth.currentUser;
+
+    if (user) {
+      try {
+        const userDocRef = doc(db, "Users", user.uid);
+        const userDocSnap = await getDoc(userDocRef);
+
+        if (userDocSnap.exists()) {
+          const userData = userDocSnap.data();
+
+          // Check if inProgressReports exists and calculate its length
+          const pendingReportsCount = userData.inProgressReports ? userData.inProgressReports.length : 0;
+
+          // Replace skeleton with actual content
+          const pendingReportsElement = document.getElementById('pending-reports');
+          if (pendingReportsElement) {
+            pendingReportsElement.textContent = pendingReportsCount;
+            pendingReportsElement.classList.remove('skeleton-loader');
+          }
+        } else {
+          console.error('No such document!');
+          displayError('0');
+        }
+      } catch (error) {
+        console.error('Error fetching user info:', error);
+        displayError('Error');
+      }
+    } else {
+      displayError('Not signed in');
+    }
+  }
+
+  function displayError(message) {
+    const pendingReportsElement = document.getElementById('pending-reports');
+    if (pendingReportsElement) {
+      pendingReportsElement.textContent = message;
+      pendingReportsElement.classList.remove('skeleton-loader');
+    }
+  }
+
+  auth.onAuthStateChanged((user) => {
+    if (user) {
+      fetchAndDisplayPendingReports();
+    } else {
+      console.error('User is not authenticated.');
+      displayError('Not authenticated');
+    }
+  });
+</script>
+
+<style>
+  .skeleton-loader {
+    background-color: #e0e0e0; /* Light gray background to mimic skeleton */
+    color: transparent; /* Hide the text until loaded */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Optional: Add padding for better aesthetics */
+    position: relative; /* Necessary for the pseudo-element */
+    overflow: hidden; /* Hide the shimmer outside the element */
+    height: 30px; /* Adjust this value to change the height of the skeleton */
+  }
+
+  .skeleton-loader::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    animation: shimmer 1.5s infinite;
+  }
+
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-150%);
+    }
+    100% {
+      transform: translateX(150%);
+    }
+  }
+</style></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto"><i class="fas fa-clipboard-list fa-2x text-gray-300"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><!-- Dashboard Structure -->
+<div class="dashboard-container">
+  <!-- Left Container: Pending Reports -->
+  <div class="card">
+    <div class="card-header">
+      <h6 class="card-title text-primary">Pending Reports</h6>
+    </div>
+    
+    <!-- Skeleton Loader for Pending Reports -->
+    <div id="pendingReportsSkeleton" class="list-group">
+      <div class="list-group-item skeleton pending-report-skeleton">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <div class="skeleton skeleton-title"></div>
+            <div class="skeleton skeleton-subtitle"></div>
+            <div class="skeleton skeleton-subtitle"></div>
+          </div>
+          <div class="skeleton skeleton-button"></div>
+        </div>
+      </div>
+      <div class="list-group-item skeleton pending-report-skeleton">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <div class="skeleton skeleton-title"></div>
+            <div class="skeleton skeleton-subtitle"></div>
+            <div class="skeleton skeleton-subtitle"></div>
+          </div>
+          <div class="skeleton skeleton-button"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="pendingReportsContainer" class="list-group">
+      <!-- Initially empty, will be populated by JavaScript -->
+    </div>
+
+    <!-- Pagination Control for Pending Reports -->
+    <div class="pagination">
+      <button id="prevPagePending" class="btn btn-secondary btn-sm" disabled>Previous</button>
+      <span id="pageNumberPending">Page 1</span>
+      <button id="nextPagePending" class="btn btn-secondary btn-sm">Next</button>
+    </div>
+  </div>
+
+  <!-- To-Do List Section -->
+  <div class="card">
+    <div class="card-header">
+      <h6 class="card-title text-primary">To-Do List</h6>
+    </div>
+
+    <!-- Skeleton Loader for To-Do List -->
+    <div id="todoListSkeleton" class="list-group">
+      <div class="list-group-item skeleton todo-item-skeleton">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="skeleton skeleton-title"></div>
+          <div class="skeleton skeleton-button"></div>
+        </div>
+      </div>
+      <div class="list-group-item skeleton todo-item-skeleton">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="skeleton skeleton-title"></div>
+          <div class="skeleton skeleton-button"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Input Section for Adding New Tasks -->
+    <div class="input-group mb-3">
+      <input type="text" id="newTaskInput" class="form-control" placeholder="Enter new task" aria-label="New Task">
+      <div class="input-group-append">
+        <button class="btn btn-primary" id="addTaskButton">Add Task</button>
+      </div>
+    </div>
+
+    <!-- To-Do List Container -->
+    <div id="todoListContainer" class="card-body">
+      <!-- To-Do items will be dynamically added here -->
+    </div>
+
+    <!-- Pagination Control for To-Do List -->
+    <div class="pagination">
+      <button id="prevPageTodo" class="btn btn-secondary btn-sm" disabled>Previous</button>
+      <span id="pageNumberTodo">Page 1</span>
+      <button id="nextPageTodo" class="btn btn-secondary btn-sm">Next</button>
+    </div>
+  </div>
+</div>
+
+<!-- CSS Styling -->
+<style>
+  .dashboard-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .card {
+    width: 48%;
+    background-color: #fff;
+    border: 1px solid #e3e6f0;
+    border-radius: 0.35rem;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58,59,69,0.15);
+  }
+
+  .card-header {
+    padding: 15px;
+    border-bottom: 1px solid #e3e6f0;
+    background-color: #f8f9fc;
+    border-radius: 0.35rem 0.35rem 0 0;
+  }
+
+  .card-title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .text-primary {
+    color: #4e73df !important;
+  }
+
+  .list-group {
+    max-height: 350px;
+    overflow-y: auto;
+    padding: 15px;
+  }
+
+  .list-group-item {
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border: 1px solid #e3e6f0;
+    border-radius: 0.35rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .btn {
+    padding: 5px 10px;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+
+  .btn-primary {
+    background-color: #4e73df;
+    border-color: #4e73df;
+    color: #fff;
+  }
+
+  .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: #fff;
+  }
+
+  .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #fff;
+  }
+
+  .pagination {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Adds space between buttons and text */
+    background-color: #f8f9fc;
+    border-top: 1px solid #e3e6f0;
+    border-radius: 0 0 0.35rem 0.35rem;
+  }
+
+  /* Updated Pagination button styling */
+  .pagination button {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 0.25rem;
+    border: none;
+    background-color: #5a6268; /* Muted dark teal */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .pagination button:hover {
+    background-color: #4e555b; /* Darker teal on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow on hover */
+  }
+
+  .pagination button:disabled {
+    background-color: #d1d3e2; /* Light gray for disabled state */
+    color: #fff;
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+
+  .pagination span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #6c757d;
+    padding: 0 10px;
+  }
+
+  .card-body {
+    padding: 15px;
+    max-height: 350px;
+    overflow-y: auto;
+  }
+
+  /* Updated CSS to stack Study Date and Study Type while keeping View button on the right */
+  .pending-report .d-flex {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .pending-report .d-flex div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pending-report .d-flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .pending-report .d-flex .info-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .pending-report .d-flex .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 0;
+  }
+
+/* Add spacing between the input field and the "Add Task" button */
+.input-group .form-control {
+  margin-right: 10px; /* Space between input and button */
+}
+
+.input-group-append {
+  display: flex;
+  align-items: center;
+}
+
+/* Add margin to the "Add Task" button */
+.input-group .btn {
+  margin-left: 10px;
+}
+
+/* Add padding or margin to the container to ensure spacing */
+.input-group {
+  padding-right: 15px; /* Add padding inside the container */
+  margin-bottom: 20px; /* Space between input section and to-do list */
+}
+
+/* Skeleton Loader Style */
+.skeleton-loader {
+  display: none; /* Hide skeleton initially */
+}
+
+.skeleton {
+  background-color: #e2e2e2;
+  background-image: linear-gradient(90deg, #e2e2e2, #f5f5f5, #e2e2e2);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  animation: skeleton-loading 1.5s infinite;
+  border-radius: 4px;
+  width: 100%;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.pending-report-skeleton, .todo-item-skeleton {
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  border: 1px solid #e3e6f0;
+  border-radius: 0.35rem;
+}
+
+.skeleton-title {
+  height: 20px;
+  width: 150px;
+  margin-bottom: 8px;
+}
+
+.skeleton-subtitle {
+  height: 15px;
+  width: 100px;
+  margin-bottom: 8px;
+}
+
+.skeleton-button {
+  height: 30px;
+  width: 80px;
+  margin-top: 8px;
+}
+
+
+
+</style>
+
+<!-- JavaScript for Pagination and Fetching Data -->
+<script type="module">
+  import { auth } from './firebase-init.mjs'; // Import Firebase auth module
+
+  // For Pending Reports
+  let currentPagePending = 1;
+  const itemsPerPagePending = 2;
+  let currentUserId = null;
+
+  // Function to fetch pending reports for the current user
+  function fetchPendingReports(userId) {
+    console.log("Fetching pending reports for userId:", userId); // Log before fetching
+    const container = document.getElementById('pendingReportsContainer');
+    const skeleton = document.getElementById('pendingReportsSkeleton');
+
+    // Show skeleton while loading
+    skeleton.style.display = 'block';
+    container.innerHTML = ''; // Clear the container
+
+    fetch(`https://spring-boot-backend-dot-reference-node-426102-r4.uk.r.appspot.com/api/user/pendingReports?userId=${userId}`)
+      .then(response => {
+        console.log("Pending reports fetched:", response); // Log the response object
+        return response.json();
+      })
+      .then(data => {
+        console.log("Pending reports data:", data); // Log the actual data
+        skeleton.style.display = 'none'; // Hide skeleton after loading
+        displayPagePendingReports(data); // Display the reports on the frontend
+      })
+      .catch(error => {
+        console.error("Error fetching pending reports:", error);
+        container.innerHTML = '<p>Error loading reports. Please try again later.</p>'; // Display error message
+        skeleton.style.display = 'none'; // Hide skeleton on error
+      });
+}
+
+  // Function to display pending reports
+  function displayPagePendingReports(reports) {
+    const container = document.getElementById('pendingReportsContainer');
+    container.innerHTML = ''; // Clear existing content (including any loading message)
+
+    const startIndex = (currentPagePending - 1) * itemsPerPagePending;
+    const endIndex = startIndex + itemsPerPagePending;
+
+    const paginatedItems = reports.slice(startIndex, endIndex);
+
+    if (paginatedItems.length === 0) {
+      container.innerHTML = '<p>No pending reports available.</p>';
+      return;
+    }
+
+    paginatedItems.forEach(report => {
+      const reportCard = document.createElement('div');
+      reportCard.className = 'list-group-item pending-report';
+
+      reportCard.innerHTML = `
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <h6 class="mb-1">Patient Name: ${report.patientName}</h6>
+            <p class="mb-1"><strong>Patient ID:</strong> ${report.patientId}</p>
+            <small><strong>Start Date:</strong> ${new Date(report.reportStartDate).toLocaleDateString()}</small>
+            <small><strong>Study Type:</strong> ${report.studyType}</small>
+          </div>
+          <button class="btn btn-primary btn-sm" data-patient-id="${report.patientId}" data-report-id="${report.reportId}">View</button>
+        </div>
+      `;
+
+      container.appendChild(reportCard);
+    });
+
+    // Attach event listeners to the "View" buttons
+    document.querySelectorAll('.btn-primary').forEach(button => {
+      button.addEventListener('click', (event) => {
+        event.stopPropagation();
+        const patientId = event.target.getAttribute('data-patient-id');
+        const reportId = event.target.getAttribute('data-report-id');
+        viewReport(patientId, reportId); // Correctly pass patientId and reportId
+      });
+    });
+
+    updatePaginationControlsPending(reports.length, currentPagePending);
+  }
+
+  // Function to navigate to the report view page with patientId and reportId
+  function viewReport(patientId, reportId) {
+    const url = `Patient-Search02.html?reportId=${reportId}&patientId=${patientId}`;
+    window.location.href = url;
+  }
+
+  // Function to update pagination controls for Pending Reports
+  function updatePaginationControlsPending(totalItems, pageNumber) {
+    const totalPages = Math.ceil(totalItems / itemsPerPagePending);
+    document.getElementById('prevPagePending').disabled = pageNumber === 1;
+    document.getElementById('nextPagePending').disabled = pageNumber === totalPages;
+    document.getElementById('pageNumberPending').textContent = `Page ${pageNumber}`;
+  }
+
+  document.getElementById('prevPagePending').addEventListener('click', () => {
+    if (currentPagePending > 1) {
+      currentPagePending--;
+      fetchPendingReports(currentUserId);
+    }
+  });
+
+  document.getElementById('nextPagePending').addEventListener('click', () => {
+    currentPagePending++;
+    fetchPendingReports(currentUserId);
+  });
+
+  // Example usage with Firebase Authentication to get the current user
+  auth.onAuthStateChanged((user) => {
+    if (user) {
+      currentUserId = user.uid;
+      fetchPendingReports(currentUserId); // Fetch pending reports for the logged-in user
+      fetchUserTasks(currentUserId); // Fetch user tasks for the logged-in user
+    } else {
+      console.log("No user is signed in.");
+    }
+  });
+
+  // For To-Do List
+  let currentPageTodo = 1;
+  const itemsPerPageTodo = 3;
+  let tasksTodo = []; // Initialize as an empty array for To-Do tasks
+
+  // Fetch tasks for the current user
+  function fetchUserTasks(userId) {
+    console.log("Fetching user tasks for userId:", userId); // Log before fetching
+    const container = document.getElementById('todoListContainer');
+    const skeleton = document.getElementById('todoListSkeleton');
+
+    // Show skeleton while loading
+    skeleton.style.display = 'block';
+    container.innerHTML = ''; // Clear the container
+
+    fetch(`https://spring-boot-backend-dot-reference-node-426102-r4.uk.r.appspot.com/api/user/${userId}/tasks`)
+      .then(response => {
+        console.log("Tasks fetch response:", response); // Log the response object
+        if (!response.ok) {
+          throw new Error(`Error fetching tasks: ${response.statusText}`);
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log("Tasks data:", data); // Log the actual tasks data
+        skeleton.style.display = 'none'; // Hide skeleton after loading
+
+        // Filter out tasks where completed is true
+        tasksTodo = data.filter(task => task.completed === false); // Keep only tasks that are not completed
+        
+        displayPageTodoList(tasksTodo); // Display the filtered tasks
+      })
+      .catch(error => {
+        console.error("Error fetching tasks:", error);
+        container.innerHTML = '<p>Error loading tasks. Please try again later.</p>';
+        skeleton.style.display = 'none'; // Hide skeleton on error
+      });
+}
+
+  // Function to display the To-Do List tasks
+  function displayPageTodoList(tasks) {
+    console.log("Displaying tasks:", tasks); // Log the tasks being displayed
+    const container = document.getElementById('todoListContainer');
+    container.innerHTML = ''; // Clear existing content
+
+    const startIndex = (currentPageTodo - 1) * itemsPerPageTodo;
+    const endIndex = startIndex + itemsPerPageTodo;
+
+    const paginatedItems = tasks.slice(startIndex, endIndex);
+
+    if (paginatedItems.length === 0) {
+      container.innerHTML = '<p>No tasks available.</p>';
+      return;
+    }
+
+    paginatedItems.forEach((task, index) => {
+      console.log("Rendering task:", task); // Log each task being rendered
+      const todoItem = document.createElement('div');
+      todoItem.className = 'list-group-item todo-item';
+
+      todoItem.innerHTML = `
+        <h6 class="mb-1">${task.title}</h6>
+        <button class="btn btn-success btn-sm" data-task-id="${task.taskId}" data-task-index="${startIndex + index}">Done</button>
+      `;
+
+      container.appendChild(todoItem);
+    });
+
+    // Attach event listeners to the "Done" buttons after rendering
+    document.querySelectorAll('.btn-success').forEach(button => {
+      button.addEventListener('click', (event) => {
+        const taskId = event.target.getAttribute('data-task-id');
+        markTaskAsDone(taskId); // Correctly pass the taskId to the function
+      });
+    });
+
+    updatePaginationControlsTodo(tasks.length, currentPageTodo);
+}
+  // Function to update pagination controls for To-Do List
+  function updatePaginationControlsTodo(totalItems, pageNumber) {
+    const totalPages = Math.ceil(totalItems / itemsPerPageTodo);
+    document.getElementById('prevPageTodo').disabled = pageNumber === 1;
+    document.getElementById('nextPageTodo').disabled = pageNumber === totalPages;
+    document.getElementById('pageNumberTodo').textContent = `Page ${pageNumber}`;
+  }
+
+  // Add event listeners for the pagination controls
+  document.getElementById('prevPageTodo').addEventListener('click', () => {
+    if (currentPageTodo > 1) {
+      currentPageTodo--;
+      displayPageTodoList(tasksTodo);  // Re-display the tasks for the previous page
+    }
+  });
+
+  document.getElementById('nextPageTodo').addEventListener('click', () => {
+    const totalItems = tasksTodo.length;
+    const totalPages = Math.ceil(totalItems / itemsPerPageTodo);
+
+    if (currentPageTodo < totalPages) {
+      currentPageTodo++;
+      displayPageTodoList(tasksTodo);  // Re-display the tasks for the next page
+    }
+  });
+
+  // Function to handle adding a new task
+  document.getElementById('addTaskButton').addEventListener('click', (event) => {
+    event.stopImmediatePropagation(); // Ensure other events don't interfere
+    event.preventDefault(); // Prevent page reload
+
+    const newTaskInput = document.getElementById('newTaskInput');
+    const newTaskTitle = newTaskInput.value.trim();
+
+    if (newTaskTitle) {
+      const task = {
+        userId: currentUserId, // Store current user's ID
+        title: newTaskTitle,
+        completed: false
+      };
+
+      // Send the task to the backend
+      fetch('https://spring-boot-backend-dot-reference-node-426102-r4.uk.r.appspot.com/api/user/tasks', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(task)
+      })
+      .then(response => response.json())
+      .then(savedTask => {
+        const taskWithId = {
+          taskId: savedTask.taskId,
+          title: savedTask.title,
+          completed: savedTask.completed
+        };
+
+        tasksTodo.push(taskWithId); // Add the saved task to the tasks array
+        newTaskInput.value = ''; // Clear the input field
+        displayPageTodoList(tasksTodo); // Re-display the updated task list
+      })
+      .catch(error => {
+        console.error("Error adding task:", error);
+      });
+    } else {
+      alert("Please enter a task title.");
+    }
+  });
+
+  // Function to mark a task as done
+  // Function to mark a task as done
+function markTaskAsDone(taskId) {
+  const originalTasks = [...tasksTodo];  // Create a backup of the current task list
+
+  // Log the current userId and taskId to verify they are being passed correctly
+  console.log("Marking task as done for userId:", currentUserId);
+  console.log("TaskId:", taskId);
+
+  // Optimistically update the UI
+  tasksTodo = tasksTodo.filter(task => task.taskId !== taskId);
+  displayPageTodoList(tasksTodo);
+
+  // Make the PUT request to the backend
+  fetch(`https://spring-boot-backend-dot-reference-node-426102-r4.uk.r.appspot.com/api/user/${currentUserId}/tasks/${taskId}`, {  // Include userId in the URL
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ completed: true })
+  })
+  .then(() => {
+    console.log("Task marked as done successfully.");
+  })
+  .catch(error => {
+    console.error("Error marking task as done:", error);
+
+    // Revert to the original task list in case of an error
+    tasksTodo = originalTasks;
+    displayPageTodoList(tasksTodo);
+  });
+}
+  
+</script></div>
+                    </div>
+                </div>
+            </div>
+            <footer class="bg-white sticky-footer" style="background: #121212;">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"></div>
+                </div>
+            </footer>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/firebase-init.mjs" type="module"></script>
+    <script src="assets/js/index.mjs" type="module"></script>
+    <script src="assets/js/logout.mjs" type="module"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>

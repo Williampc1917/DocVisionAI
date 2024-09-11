@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Table - DocVisionAI</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/Features-Cards-icons.css">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <nav class="navbar align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0 navbar-dark" style="background: rgb(78, 115, 223);">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -64 640 640" width="1em" height="1em" fill="currentColor" style="font-size: 42px;">
+                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                        <path d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM288 160c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v48h48c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H352v48c0 8.8-7.2 16-16 16H304c-8.8 0-16-7.2-16-16V272H240c-8.8 0-16-7.2-16-16V224c0-8.8 7.2-16 16-16h48V160z"></path>
+                    </svg>
+                    <div class="sidebar-brand-icon rotate-n-15"></div>
+                    <div class="sidebar-brand-text mx-3"><span>DocVisionAI</span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item"><a class="nav-link" href="index-dash.html"><i class="fas fa-tachometer-alt" style="font-size: 13px;"></i><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.html"><i class="fas fa-user" style="font-size: 14px;"></i><span>Profile</span></a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link" href="Patient-Search-only.html"><i class="fas fa-search" style="font-size: 14px;"></i><span>Patient Search</span></a><a class="nav-link" href="Start-quick-analysis-1.html"><i class="fas fa-tachometer-alt" style="font-size: 13px;"></i><span>Quick Analysis</span></a><a class="nav-link" href="Start-analysis.html"><i class="fas fa-file-medical" style="font-size: 16px;"></i><span>Start Analysis</span></a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <nav class="navbar navbar-expand bg-white shadow mb-4 topbar">
+                <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                    <ul class="navbar-nav"></ul>
+                    <h3 class="text-dark mb-0" style="font-size: 25px;font-weight: bold;">Start Analysis</h3>
+                    <ul class="navbar-nav flex-nowrap ms-auto">
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"></a>
+                                <div class="dropdown-menu dropdown-list dropdown-menu-end animated--grow-in">
+                                    <h6 class="dropdown-header">alerts center</h6><a class="d-flex align-items-center dropdown-item" href="#">
+                                        <div class="me-3">
+                                            <div class="bg-primary icon-circle"><i class="fas fa-file-alt text-white"></i></div>
+                                        </div>
+                                        <div><span class="small text-gray-500">December 12, 2019</span>
+                                            <p>A new monthly report is ready to download!</p>
+                                        </div>
+                                    </a><a class="d-flex align-items-center dropdown-item" href="#">
+                                        <div class="me-3">
+                                            <div class="bg-success icon-circle"><i class="fas fa-donate text-white"></i></div>
+                                        </div>
+                                        <div><span class="small text-gray-500">December 7, 2019</span>
+                                            <p>$290.29 has been deposited into your account!</p>
+                                        </div>
+                                    </a><a class="d-flex align-items-center dropdown-item" href="#">
+                                        <div class="me-3">
+                                            <div class="bg-warning icon-circle"><i class="fas fa-exclamation-triangle text-white"></i></div>
+                                        </div>
+                                        <div><span class="small text-gray-500">December 2, 2019</span>
+                                            <p>Spending Alert: We've noticed unusually high spending for your account.</p>
+                                        </div>
+                                    </a><a class="text-center dropdown-item small text-gray-500" href="#">Show All Alerts</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"></a>
+                                <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
+                                    <h6 class="dropdown-header">alerts center</h6><a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar4.jpeg">
+                                            <div class="bg-success status-indicator"></div>
+                                        </div>
+                                        <div class="fw-bold">
+                                            <div class="text-truncate"><span>Hi there! I am wondering if you can help me with a problem I've been having.</span></div>
+                                            <p class="small text-gray-500 mb-0">Emily Fowler - 58m</p>
+                                        </div>
+                                    </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar2.jpeg">
+                                            <div class="status-indicator"></div>
+                                        </div>
+                                        <div class="fw-bold">
+                                            <div class="text-truncate"><span>I have the photos that you ordered last month!</span></div>
+                                            <p class="small text-gray-500 mb-0">Jae Chun - 1d</p>
+                                        </div>
+                                    </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar3.jpeg">
+                                            <div class="bg-warning status-indicator"></div>
+                                        </div>
+                                        <div class="fw-bold">
+                                            <div class="text-truncate"><span>Last month's report looks great, I am very happy with the progress so far, keep up the good work!</span></div>
+                                            <p class="small text-gray-500 mb-0">Morgan Alvarez - 2d</p>
+                                        </div>
+                                    </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar5.jpeg">
+                                            <div class="bg-success status-indicator"></div>
+                                        </div>
+                                        <div class="fw-bold">
+                                            <div class="text-truncate"><span>Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</span></div>
+                                            <p class="small text-gray-500 mb-0">Chicken the Dog · 2w</p>
+                                        </div>
+                                    </a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                                </div>
+                            </div>
+                            <div class="shadow dropdown-list dropdown-menu dropdown-menu-end" aria-labelledby="alertsDropdown"></div>
+                        </li>
+                        <div class="d-none d-sm-block topbar-divider"></div>
+                        <li class="nav-item dropdown no-arrow">
+                            <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small" id="user-name"></span></a>
+                                <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"><a class="dropdown-item" id="logoutButton" href="#"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile</a>
+                                    <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul><button class="btn rounded-circle border-0" id="sidebarToggle-1" type="button"></button>
+                </div>
+            </nav>
+            <div id="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col"><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start Analysis - Basic Information</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fc;
+    }
+    .card {
+      background-color: #ffffff;
+      border: none;
+      box-shadow: 0 0.15rem 1.75rem 0 rgba(58,59,69,0.15);
+      border-radius: 0.35rem;
+    }
+    .card-header {
+      background-color: #ffffff;
+      border-bottom: 1px solid #e3e6f0;
+      color: #4e73df !important;
+      font-weight: 700;
+    }
+    .form-control {
+      background-color: #f8f9fc;
+      border: 1px solid #d1d3e2;
+      color: rgb(133, 135, 150) !important;
+      border-radius: 0.35rem;
+    }
+    .form-control:focus {
+      border-color: #4e73df;
+      box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+    }
+    .btn-primary {
+      background-color: #4e73df;
+      border-color: #4e73df;
+      border-radius: 0.35rem;
+    }
+    .btn-primary:hover {
+      background-color: #2e59d9;
+      border-color: #2653d4;
+    }
+    label {
+      color: rgb(133,135,150);
+      font-weight: 600;
+    }
+    .patient-info-card {
+      display: none;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-12">
+        <form id="start-analysis-form" style="padding: 20px;" onsubmit="startAnalysis(event)">
+          <div class="card">
+            <div class="card-header">
+              Start Analysis
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <label for="searchBar">Search Patient</label>
+                <input type="text" class="form-control" id="searchBar" placeholder="Enter Patient ID" required>
+                <button type="button" class="btn btn-primary mt-3" onclick="searchPatient()">Search Patient</button>
+              </div>
+
+              <!-- Add New Patient Button -->
+              <button type="button" class="btn btn-secondary mt-3" onclick="addNewPatient()">Add New Patient</button>
+
+              <!-- Loading Spinner -->
+              <div id="loading" style="display: none;">
+                <div class="spinner-border text-primary" role="status">
+                  <span class="sr-only">Loading...</span>
+                </div>
+              </div>
+
+              <!-- Patient Not Found Alert -->
+              <div id="patientNotFound" class="alert alert-warning" style="display: none;">
+                Patient not found.
+              </div>
+
+              <!-- Patient Information Display Section -->
+              <div id="patient-info" class="patient-info-card card">
+                <div class="card-header">
+                  Patient Information
+                </div>
+                <div class="card-body">
+                  <p><strong>Patient Name:</strong> <span id="patientName"></span></p>
+                  <p><strong>Date of Birth:</strong> <span id="patientDOB"></span></p>
+                  <p><strong>Gender:</strong> <span id="patientGender"></span></p>
+                </div>
+              </div>
+
+              <!-- Form fields for starting the analysis -->
+              <div id="analysis-form-fields" style="display: none;">
+                <div class="form-group">
+                  <label for="reportStartDate">Report Start Date</label>
+                  <input type="date" class="form-control" id="reportStartDate" name="reportStartDate" required>
+                </div>
+                <div class="form-group">
+                  <label for="radiologistName">Radiologist Name</label>
+                  <input type="text" class="form-control" id="radiologistName" name="radiologistName" required>
+                </div>
+                <div class="form-group">
+                  <label for="studyType">Study Type</label>
+                  <select class="form-control" id="studyType" name="studyType" required>
+                    <option value="chest_xray">Chest X-ray</option>
+                    <option value="mri">MRI</option>
+                    <option value="ct_scan">CT Scan</option>
+                    <option value="ultrasound">Ultrasound</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="sessionNotes">Session Description/Notes</label>
+                  <textarea class="form-control" id="sessionNotes" name="sessionNotes" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Start Analysis</button>
+              </div>
+
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+  import { auth } from './firebase-init.mjs';
+
+  function addNewPatient() {
+    window.location.href = 'Add-New-Patient.html';
+  }
+
+  function searchPatient() {
+    const patientId = document.getElementById('searchBar').value.trim();
+
+    if (patientId === "") {
+      alert("Please enter a Patient ID.");
+      return;
+    }
+
+    document.getElementById('loading').style.display = 'block';
+    document.getElementById('patientNotFound').style.display = 'none';
+
+    const searchEndpoint = `https://spring-boot-backend-dot-reference-node-426102-r4.uk.r.appspot.com/api/patient/search?patientId=${patientId}`;
+
+    fetch(searchEndpoint, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+    .then(response => {
+      document.getElementById('loading').style.display = 'none';
+      if (!response.ok) {
+        return Promise.reject("Patient not found");
+      }
+      return response.json();
+    })
+    .then(data => {
+      if (data) {
+        console.log('Patient found:', data); // Log patient data
+        // Display patient info
+        document.getElementById('patientName').textContent = data.fullName;
+        document.getElementById('patientDOB').textContent = data.dob;
+        document.getElementById('patientGender').textContent = data.gender;
+
+        // Show the patient info section if it exists
+        const patientInfoSection = document.getElementById('patient-info');
+        if (patientInfoSection) {
+          patientInfoSection.style.display = 'block';
+        }
+
+        // Show the rest of the form fields if they exist
+        const analysisFormFields = document.getElementById('analysis-form-fields');
+        if (analysisFormFields) {
+          analysisFormFields.style.display = 'block';
+        }
+      } else {
+          alert("No patient data found.");
+          clearPatientInfo();  // Clear patient information if no data is found
+        }
+      })
+      .catch(error => {
+        console.error("Error fetching patient:", error); // Log error
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('patientNotFound').style.display = 'block';
+        clearPatientInfo();  // Clear patient information on error
+      });
+  }
+
+  function clearPatientInfo() {
+    document.getElementById('patientName').textContent = '';
+    document.getElementById('patientDOB').textContent = '';
+    document.getElementById('patientGender').textContent = '';
+
+    // Hide the patient info section and the rest of the form
+    document.getElementById('patient-info').style.display = 'none';
+    document.getElementById('analysis-form-fields').style.display = 'none';
+  }
+
+  function startAnalysis(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    const patientId = document.getElementById('searchBar').value.trim();
+    const reportStartDate = document.getElementById('reportStartDate').value;
+    const radiologistName = document.getElementById('radiologistName').value;
+    const studyType = document.getElementById('studyType').value;
+    const sessionNotes = document.getElementById('sessionNotes').value;
+    const user = auth.currentUser; // Get the current logged-in user
+
+    if (!user) {
+      console.error('No user is signed in.');
+      alert('You must be signed in to start an analysis.');
+      return;
+    }
+
+    const userId = user.uid; // Get the user's ID
+
+    // Get the patient's name from the displayed information
+    const patientName = document.getElementById('patientName').textContent;
+
+    const requestData = {
+      patientId,
+      reportStartDate,
+      radiologistName,
+      studyType,
+      sessionNotes,
+      userId, // Include userId in the request
+      patientName // Include patientName in the request
+    };
+
+    console.log('Starting analysis with data:', requestData); // Log request data
+
+    fetch('https://spring-boot-backend-dot-reference-node-426102-r4.uk.r.appspot.com/api/patient/startAnalysis', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(requestData)
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.status === 'success') {
+        console.log('Analysis started successfully:', data); // Log success
+        alert(`Analysis started successfully! Report ID: ${data.reportId}`);
+        // Redirect to the next page and pass the reportId as a query parameter
+        window.location.href = `Patient-Search02.html?reportId=${data.reportId}&patientId=${patientId}`;
+      } else {
+        console.error('Failed to start analysis:', data.message); // Log failure
+        alert('Failed to start analysis: ' + data.message);
+      }
+    })
+    .catch(error => {
+      console.error('Error starting analysis:', error); // Log error
+      alert('An error occurred while starting the analysis. Please try again.');
+    });
+}
+
+  // Expose functions to global scope
+  window.addNewPatient = addNewPatient;
+  window.searchPatient = searchPatient;
+  window.startAnalysis = startAnalysis;
+</script>
+</body>
+</html>
+
+
+
+
+</div>
+                    </div>
+                </div>
+            </div>
+            <footer class="bg-white sticky-footer" style="background: #121212;">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"></div>
+                </div>
+            </footer>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/firebase-init.mjs" type="module"></script>
+    <script src="assets/js/index.mjs" type="module"></script>
+    <script src="assets/js/logout.mjs" type="module"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
