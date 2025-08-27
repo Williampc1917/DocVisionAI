@@ -8,41 +8,32 @@ import com.google.firebase.cloud.FirestoreClient;
 import com.google.firebase.cloud.StorageClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.beans.factory.annotation.Value;
 
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.logging.Logger;
 
-
-
 /**
- * Configuration class for initializing Firebase services including Firestore and Firebase Storage.
- * This class reads the Firebase service account credentials from the specified path and sets up
- * FirebaseApp, Firestore, and StorageClient beans to be used across the application.
+ * Configuration class for initializing Firebase services.
+ * Credentials are loaded from environment variables for security.
  */
 @Configuration
 public class FirebaseConfig {
 
     private static final Logger logger = Logger.getLogger(FirebaseConfig.class.getName());
 
-    /**
-     * Initializes the FirebaseApp instance using default credentials from the App Engine environment.
-     * This method sets up Firebase credentials and configures the Firebase Storage bucket.
-     *
-     * @return FirebaseApp instance initialized with the default credentials.
-     * @throws IOException If there is an issue initializing Firebase.
-     */
     @Bean
     public FirebaseApp initializeFirebase() throws IOException {
         try {
+            // For production deployment - credentials loaded from environment
+            GoogleCredentials credentials = GoogleCredentials.getApplicationDefault();
+            
             FirebaseOptions options = new FirebaseOptions.Builder()
-                    .setCredentials(GoogleCredentials.getApplicationDefault()) // Use Google Cloud's default credentials
-                    .setStorageBucket("reference-node-426102-r4.appspot.com")  // Your Firebase storage bucket
+                    .setCredentials(credentials)
+                    .setStorageBucket("your-firebase-bucket-name")  // Replace with actual bucket
                     .build();
 
             FirebaseApp app = FirebaseApp.initializeApp(options);
-            logger.info("FirebaseApp initialized successfully with name: " + app.getName());
+            logger.info("FirebaseApp initialized successfully");
             return app;
         } catch (IOException e) {
             logger.severe("Error initializing Firebase: " + e.getMessage());
@@ -50,31 +41,13 @@ public class FirebaseConfig {
         }
     }
 
-    /**
-     * Creates and configures a Firestore bean using the initialized FirebaseApp instance.
-     *
-     * @param firebaseApp The FirebaseApp instance required to access Firestore services.
-     * @return Firestore instance initialized with FirebaseApp.
-     */
     @Bean
     public Firestore firestore(FirebaseApp firebaseApp) {
-        logger.info("Initializing Firestore");
-        Firestore firestore = FirestoreClient.getFirestore(firebaseApp);
-        logger.info("Firestore initialized successfully");
-        return firestore;
+        return FirestoreClient.getFirestore(firebaseApp);
     }
 
-    /**
-     * Creates and configures a StorageClient bean to interact with Firebase Storage.
-     *
-     * @param firebaseApp The FirebaseApp instance required to access Firebase Storage services.
-     * @return StorageClient instance initialized with FirebaseApp.
-     */
     @Bean
     public StorageClient storageClient(FirebaseApp firebaseApp) {
-        logger.info("Initializing Firebase Storage");
-        StorageClient storageClient = StorageClient.getInstance(firebaseApp);
-        logger.info("Firebase Storage initialized successfully");
-        return storageClient;
+        return StorageClient.getInstance(firebaseApp);
     }
 }
